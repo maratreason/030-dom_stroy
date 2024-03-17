@@ -1,0 +1,6 @@
+mixin breadcrumbs(...args)
+    .breadcrumbs
+        ul.breadcrumbs__list
+            each item in args
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#")= item

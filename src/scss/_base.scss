@@ -1,0 +1,61 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: Inter, sans-serif;
+  line-height: 1.7rem;
+}
+
+.container {
+  // width: 128rem;
+  width: 122.4rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+span {
+  display: inline;
+}
+
+a {
+  color: var(--blue-dark);
+}
+
+.title {
+  @include big-title;
+
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  @include subtitle;
+
+  margin-bottom: 1.8rem;
+  color: rgba(#202020, 0.8);
+}
+
+.section-title {
+  @include section-title;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.align-start {
+  align-items: flex-start !important;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.d-flex {
+  display: flex;
+}

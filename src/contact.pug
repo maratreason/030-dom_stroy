@@ -1,0 +1,48 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.contact
+      iframe.contact-map__frame(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12610.692492634298!2d-122.41801228349344!3d37.797699595721355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f1e87de297%3A0xc8480d80940cc6a9!2zNzg0IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661129770192!5m2!1sru!2sru"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade")
+
+      .contact__wrapper
+        .container
+          .contact__inner
+            .contact__inner-content
+              +breadcrumbs("Главная", "Контакты")
+              h1.contact__title.title Контакты
+              p.subtitle.
+                Свяжитесь с нами и мы ответим на все вопросы по строительству,
+                а также будем рады видеть Вас в нашем офисе.
+              .main-slider__btns.contact-slider__btns
+                button.main-slider__btn.btn.btn-rounded.btn-primary(data-show-moda)
+                  img(src="images/icons/chevron-right.svg" alt="")
+                button.main-slider__btn-link.btn.btn-link.btn-link--primary ЗАДАТЬ ВОПРОС
+
+              .delivery-map__result
+                .delivery-map__item
+                  .contact-map__wrapper
+                    p.contact-map__text Менеджер Елена
+                    p.contact-map__phone +7 (900) 000-00-00
+                .delivery-map__item
+                  .contact-map__wrapper
+                    p.contact-map__text Менеджер Елена
+                    p.contact-map__phone +7 (900) 000-00-00
+            .contact__inner-contact
+              .contact__inner-contact-wrapper
+                .subcatalog-work__item-title Адрес:
+                .subcatalog-work__item-text.contact__item-text г. Москва, 100 км МКАД, ТЦ “ТЦ”
+                .subcatalog-work__item-text.contact__item-text Ежедневно с 10:00 до 19:00
+              .contact__inner-contact-wrapper
+                .subcatalog-work__item-title Электронная почта:
+                .subcatalog-work__item-text.contact__item-text mail@gmail.com
+              .contact__inner-contact-wrapper
+                .subcatalog-work__item-title Мы в социальных сетях:
+                .subcatalog-work__item-text.contact__item-text mail@gmail.com
+
+  include pug/includes/footer.pug

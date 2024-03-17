@@ -1,0 +1,74 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.individual
+      .container
+        .individual__inner
+          +breadcrumbs("Главная", "Заказчику", "Индивидуальное строительство")
+
+      .swiper.swiper-main-slider.individual__inner-slider
+        .swiper-wrapper
+          .swiper-slide.main-slider(style="background: url(images/individual/bg-slider.jpg); background-size: cover;")
+            img.main-slider__right-img(src="images/individual/slider-image.png" alt="slider right image 1")
+            .container
+              .main-slider__content
+                h2.main-slider__title Индивидуальное строительство
+                p.main-slider__text.
+                  Мы ценим каждого клиента и сделаем всю работу сами. Воплощаем в жизнь проекты,
+                  создавая дома для комфортной жизни.
+              .main-slider__btns
+                button.main-slider__btn.btn.btn-rounded
+                  img(src="images/icons/chevron-right-dark.svg" alt="")
+                button.main-slider__btn-link.btn.btn-link.text-black(data-show-modal)
+                  | Рассчитать стоимость индивидуального проекта
+
+          .swiper-slide.main-slider(style="background: url(images/individual/bg-slider.jpg); background-size: cover;")
+            img.main-slider__right-img(src="images/individual/slider-image.png" alt="slider right image 2")
+            .container
+              .main-slider__content
+                h2.main-slider__title Индивидуальное строительство
+                p.main-slider__text.
+                  Мы ценим каждого клиента и сделаем всю работу сами. Воплощаем в жизнь проекты,
+                  создавая дома для комфортной жизни.
+              .main-slider__btns
+                button.main-slider__btn.btn.btn-rounded
+                  img(src="images/icons/chevron-right-dark.svg" alt="")
+                button.main-slider__btn-link.btn.btn-link.text-black(data-show-modal)
+                  | Рассчитать стоимость индивидуального проекта
+
+    section.individual-info
+      .container
+        .individual-info__inner
+          h2.individual-info__title
+            span.bold-text Как подать заявку&nbsp;
+            | на индивидуальное строительство?
+          p.individual-info__text.
+            Хотите расчитать стоимость строительных работ, заполните форму для расчета. Вы вводите необходимые данные,
+            отправляете их нашим специалистам. Они определяют стоимость строительства,
+            присылают вам результат расчетов.
+
+          .individual-info__block.gray-block
+            h3.individual-info__block-title Что нужно указать для расчета стоимости?
+            p.individual-info__block-text Для расчета цены строительных работ понадобится указать:
+            ul.individual-info__block-list
+              li.individual-info__block-item Тип сооружаемого объекта
+                | (Каркасный дом/ баня /беседка из мини-бруса/ бытовка).
+              li.individual-info__block-item Площадь сооружаемого объекта.
+              li.individual-info__block-item Тип фундаментной основы (блочный/ свайно-винтовой, не нужен).
+              li.individual-info__block-item Толщину стеновых поверхностей (от пятидесяти до двухсот миллиметров).
+              li.individual-info__block-item Количество этажей (один, полтора, два, с мансардным этажом).
+              li.individual-info__block-item Адрес места строительства (для расчета киллометража).
+              li.individual-info__block-item Имя заказчика.
+              li.individual-info__block-item Телефонный номер заказчика.
+              li.individual-info__block-item Адрес электронной почты заказчика.
+
+            p.individual-info__block-text.
+              Есть возможность прикрепления файла. Также заказчик может в произвольной форме написать
+              собственные пожелания к проведению строительных работ. После ввода всех необходимы данных
+              требуется нажать на кнопку «Отправить». Ответ поступит на телефонный номер либо же
+              электронную почту заказчика.
+
+  include pug/includes/footer.pug

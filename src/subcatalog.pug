@@ -1,0 +1,416 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.subcatalog
+      .container
+        +breadcrumbs("Главная", "Каталог", "Каркасные дома")
+        h1.catalog__title.title Каркасные дома
+        p.subtitle.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    section.subcatalog__goods
+      .container
+        .subcatalog__goods-inner
+          aside.subcatalog__filter.aside
+            .aside-block.aside-block__top
+              img.aside-block__img(src="images/icons/aside/aside-filter.svg" alt="")
+              span.aside-block__title Фильтр
+            .aside-block.aside-block__price
+              .aside-block__title Стоимость
+              .aside-block__item
+                .aside-block__range
+                  .aside-block__price-input
+                    .field
+                      input.input.input-range.input-min(type="text" value="2500 ₽")
+                    .separator -
+                    .field
+                      input.input.input-range.input-max(type="text" value="7500 ₽")
+                  .slider
+                    .progress
+
+                  .aside-block__range-input.range-input
+                    input.range-min(type="range" min="0" max="10000" value="2500" step="10")
+                    input.range-max(type="range" min="0" max="10000" value="7500" step="10")
+
+            .aside-block.aside-block__square
+              .aside-block__title Площадь
+              .aside-block__item
+                .aside-block__range
+                  .aside-block__price-input
+                    .field
+                      input.input.input-range.input-min(type="text" value="20 ㎡")
+                    .separator -
+                    .field
+                      input.input.input-range.input-max(type="text" value="350 ㎡")
+                  .slider
+                    .progress
+
+                  .aside-block__range-input.range-input
+                    input.range-min(type="range" min="20" max="1000" value="20" step="10")
+                    input.range-max(type="range" min="20" max="1000" value="350" step="10")
+
+            .aside-block
+              .aside-block__title Этажность
+              .aside-block__item
+                .aside-block__checkboxes
+                  label.checkbox__label(for="level-1")
+                    input.checkbox(type="checkbox" id="level-1")
+                    span.checkbox__fake
+                    span.checkbox__text 1 этаж
+                  label.checkbox__label(for="level-2")
+                    input.checkbox(type="checkbox" id="level-2" checked)
+                    span.checkbox__fake
+                    span.checkbox__text 2 этажа
+
+            .aside-block
+              .aside-block__title Размеры
+              .aside-block__item
+                ul.aside-block__sizes-list
+                  li.aside-block__sizes-item(data-size-btn data-size="6x7") 6x7
+                  li.aside-block__sizes-item(data-size-btn data-size="8x8") 8x8
+                  li.aside-block__sizes-item(data-size-btn data-size="8x10") 8x10
+                  li.aside-block__sizes-item(data-size-btn data-size="10x10") 10x10
+                  li.aside-block__sizes-item(data-size-btn data-size="10x12") 10x12
+                  li.aside-block__sizes-item(data-size-btn data-size="12x12") 12x12
+                  li.aside-block__sizes-item(data-size-btn data-size="12x14") 12x14
+                  li.aside-block__sizes-item.is--active(data-size-btn data-size="14x14") 14x14
+                  li.aside-block__sizes-item.is--active(data-size-btn data-size="16x16") 16x16
+                  li.aside-block__sizes-item(data-size-btn data-size="18x18") 18x18
+                  li.aside-block__sizes-item(data-size-btn data-size="20x20") 20x20
+                  li.aside-block__sizes-item(data-size-btn data-size="20x24") 20x24
+
+            .aside-block
+              .aside-block__title Форма крыши
+              .aside-block__item
+                .aside-block__checkboxes
+                  label.checkbox__label(for="odnoskatnaya" data-roof="1")
+                    input.checkbox(type="checkbox" id="odnoskatnaya")
+                    span.checkbox__fake
+                    span.checkbox__text Односкатная
+                  label.checkbox__label(for="dvuhskatnaya" data-roof="2")
+                    input.checkbox(type="checkbox" id="dvuhskatnaya" checked)
+                    span.checkbox__fake
+                    span.checkbox__text Двухскатная
+
+            .aside-block
+              .aside-block__title Количество спален
+              .aside-block__item
+                .aside-block__checkboxes
+                  label.checkbox__label(for="odnaspalnya" data-room="1")
+                    input.checkbox(type="checkbox" id="odnaspalnya")
+                    span.checkbox__fake
+                    span.checkbox__text 1 спальня
+                  label.checkbox__label(for="dvespalni" data-room="2")
+                    input.checkbox(type="checkbox" id="dvespalni" checked)
+                    span.checkbox__fake
+                    span.checkbox__text 2 спальни
+                  label.checkbox__label(for="trispalni" data-room="3")
+                    input.checkbox(type="checkbox" id="trispalni" checked)
+                    span.checkbox__fake
+                    span.checkbox__text 3 спальни
+                  label.checkbox__label(for="chetyrespalni" data-room="4")
+                    input.checkbox(type="checkbox" id="chetyrespalni" checked)
+                    span.checkbox__fake
+                    span.checkbox__text 4 спальни
+
+            .aside-block
+              .aside-block__buttons
+                button.btn.btn-primary Показать
+                button.btn.btn-primary Сбросить
+
+
+          .subcatalog__items
+            .subcatalog__items-sorting.sorting
+              p.sorting__title Сортировать:
+              .select.select-bordered.select-sm.form-control(data-select)
+                .select__current
+                  span Площадь по возрастанию
+                  .btn-dropdown__icon
+                    img(src="images/icons/ui/select-icon.svg"
+                      alt="select dropdown item"
+                      data-select-icon)
+                ul.select__list
+                  li.select__item Цена по возрастанию
+                  li.select__item Цена по убыванию
+                  li.select__item Площадь по возрастанию
+                  li.select__item Площадь по убыванию
+                  li.select__item По популярности
+            .subcatalog__items-goods.goods
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .card
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+            .subcatalog__items-pagination.pagination
+              .pagination__pages
+                a.pagination__page--active(href="#") 9&nbsp;
+                span /&nbsp;
+                a.pagination__page(href="#") 124
+
+              .pagination__line
+              button.pagination__btn.btn.btn-big-rounded Показать больше
+
+        .subcatalog__subtitle
+          p.subtitle.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          p.subtitle.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    section
+      .container
+        h2.section-offer__title.section-title Предложения для вас
+
+        .section-offer__tabs
+          .tabs__header
+            .tabs__header-item.btn.btn-warning Лидеры продаж
+            .tabs__header-item.btn.btn-gray Новинки
+            .tabs__header-item.btn.btn-gray Со скидкой
+          .swiper.offer-slider
+            .tabs__content.swiper-wrapper
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-2.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-3.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-4.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-2.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-3.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+            .offer-slider__btns
+              button.offer-slider__btn.offer-slider__btn--left
+                img(src="images/icons/middle-chevron-left.svg" alt="")
+              button.offer-slider__btn.offer-slider__btn--right
+                img(src="images/icons/middle-chevron-right.svg" alt="")
+
+    section.section-ours
+      .container
+        h2.section-offer__title.section-title Наши работы
+          .ours-slider.swiper
+            .swiper-wrapper
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/1.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/2.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/3.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/1.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/2.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+              .card__picture.swiper-slide
+                img.card__picture-img(src="images/our-works/3.jpg" alt="")
+                h3.card__picture-title Каркасный дом с балконом LK-2
+            .ours-slider__btns
+              button.ours-slider__btn.ours-slider__btn--left
+                img(src="images/icons/chevron-right-white.svg" alt="")
+              button.ours-slider__btn.ours-slider__btn--right
+                img(src="images/icons/chevron-right-white.svg" alt="")
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите рассчитать&nbsp;
+              | стоимость проекта?
+              | Это просто!
+            p.section-dop__text.
+              Оставьте заявку и наши консультанты рассчитают стоимость
+              Вашего проекта бесплатно и быстро!
+          button.section-dop__btn.btn.btn-big.btn-primary РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА
+
+  include pug/includes/footer.pug

@@ -1,0 +1,6 @@
+@mixin button($color, $bgColor, $borderColor) {
+  color: $color;
+  background: $bgColor;
+  border-color: $borderColor;
+  transition: var(--transition-1);
+}

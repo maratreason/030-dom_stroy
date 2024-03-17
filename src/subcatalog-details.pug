@@ -1,0 +1,433 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.subcatalog
+      .container
+        +breadcrumbs("Главная", "Каталог", "Каркасные дома", "Каркасно-модульный дом Венеция")
+
+
+    section.subcatalog-main
+      .container
+        .subcatalog-main__inner
+          .subcatalog-main__slider(data-subcatalog-slider)
+            img.subcatalog-main__slider-big(src="images/subcatalog-details/big-img.jpg" alt="" data-picture-big)
+            .subcatalog-main__slider-swiper.swiper
+              ul.subcatalog-main__slider-list.swiper-wrapper
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-1.jpg" alt="")
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-2.jpg" alt="")
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-3.jpg" alt="")
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-4.jpg" alt="")
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-1.jpg" alt="")
+                li.subcatalog-main__slider-item.swiper-slide(data-picture-small)
+                  img.subcatalog-main__slider-img(src="images/subcatalog-details/item-3.jpg" alt="")
+            .subcatalog-main__slider-btns
+              button.subcatalog-main-slider__btn.subcatalog-main__btn--left
+                img(src="images/icons/middle-chevron-left.svg" alt="")
+              button.subcatalog-main-slider__btn.subcatalog-main__btn--right
+                img(src="images/icons/middle-chevron-right.svg" alt="")
+
+          .subcatalog-main__content
+            h1.subcatalog-main__title Каркасно-модульный дом Венеция 4x4,6 м с террасой, кухней и спальней
+            p.
+              Недорогой дачный дом размером 6х8м. с панорамным остеклением,
+              возможностью выбора с сезонного проживания на постоянное.
+            ul.subcatalog-main__content-list.subcatalog-list
+              li.subcatalog-item
+                .subcatalog-item__block
+                  img.subcatalog-item__img(src="images/icons/meters.svg" alt="meters icon")
+                  .subcatalog-item__text Размер дома
+                .subcatalog-item__block
+                  .subcatalog-item__boldtext 4x6,9 м
+              li.subcatalog-item
+                .subcatalog-item__block
+                  img.subcatalog-item__img(src="images/icons/square.svg" alt="square icon")
+                  .subcatalog-item__text Площадь застройки
+                .subcatalog-item__block
+                  .subcatalog-item__boldtext 30 м2
+              li.subcatalog-item
+                .subcatalog-item__block
+                  img.subcatalog-item__img(src="images/icons/clock.svg" alt="clock icon")
+                  .subcatalog-item__text Срок строительства
+                .subcatalog-item__block
+                  .subcatalog-item__boldtext 20 дней
+
+            button.subcatalog-main__btn.btn.btn-warning.btn-wide Задать вопрос
+
+    section.subcatalog-info
+      .container
+        .subcatalog-info__inner
+          ul.subcatalog-info__accordion(data-accordion-info)
+            li.subcatalog-info__item(data-accordion-title-id="1")
+              .subcatalog-info__block
+                label.checkbox__label(for="stage-1")
+                  input.checkbox(type="checkbox" id="stage-1")
+                  span.checkbox__fake
+                  span.checkbox__title Без внутренней отделки
+                  .subcatalog-info__box
+                    span.checkbox__title 550 руб
+            li.subcatalog-info__item(data-accordion-title-id="2")
+              .subcatalog-info__block
+                label.checkbox__label(for="stage-2")
+                  input.checkbox(type="checkbox" id="stage-2")
+                  span.checkbox__fake
+                  span.checkbox__title Утепленный 50мм
+                  .subcatalog-info__box
+                    span.checkbox__title 700 руб
+
+            li.subcatalog-info__desc(data-accordion-desc-id="2")
+              ul.subcatalog-info__desc-list
+                li.subcatalog-info__desc-item
+                  b Фундамент
+                  span : столбы из бетонных блоков 30х30х20 см (16шт), высота цоколя 200мм.
+                li.subcatalog-info__desc-item
+                  b Нижняя обвязка
+                  span : брус 100х150мм.
+                li.subcatalog-info__desc-item
+                  b Черновой пол
+                  span : доска 25мм (2 сорт).
+                li.subcatalog-info__desc-item
+                  b Чистовой пол
+                  span : строганая шпунтованная доска 21мм.
+                li.subcatalog-info__desc-item
+                  b Стены
+                  span : каркасно-щитовые из бруса 40х150мм. подшита вагонкой с двух сторон.
+                li.subcatalog-info__desc-item
+                  b Перегородки
+                  span : каркасно-щитовые из бруса 40х50мм. подшита вагонкой с двух сторон.
+                li.subcatalog-info__desc-item
+                  b Высота помещения
+                  span : 2.1м.
+                li.subcatalog-info__desc-item
+                  b Потолок
+                  span : вагонка.
+                li.subcatalog-info__desc-item
+                  b Утепление пола
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Утепление стен
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Утепление потолка
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Крыша
+                  span : Кровля-оцинкованное профильное железо С20. Высота конька 700мм.
+                li.subcatalog-info__desc-item
+                  b Окна
+                  span : ПВХ,однокамерные панорамные.
+                li.subcatalog-info__desc-item
+                  b Двери межкомнатные
+                  span : Филенчатые.
+                li.subcatalog-info__desc-item
+                  b Двери входные
+                  span : ПВХ двухстворчатая.
+
+            li.subcatalog-info__item(data-accordion-title-id="3")
+              .subcatalog-info__block
+                label.checkbox__label(for="stage-3")
+                  input.checkbox(type="checkbox" id="stage-3")
+                  span.checkbox__fake
+                  span.checkbox__title Утепленный 100мм
+                  .subcatalog-info__box
+                    span.checkbox__title 850 руб
+
+            li.subcatalog-info__desc(data-accordion-desc-id="3")
+              ul.subcatalog-info__desc-list
+                li.subcatalog-info__desc-item
+                  b Фундамент
+                  span : столбы из бетонных блоков 30х30х20 см (16шт), высота цоколя 200мм.
+                li.subcatalog-info__desc-item
+                  b Нижняя обвязка
+                  span : брус 100х150мм.
+                li.subcatalog-info__desc-item
+                  b Черновой пол
+                  span : доска 25мм (2 сорт).
+                li.subcatalog-info__desc-item
+                  b Чистовой пол
+                  span : строганая шпунтованная доска 21мм.
+                li.subcatalog-info__desc-item
+                  b Стены
+                  span : каркасно-щитовые из бруса 40х150мм. подшита вагонкой с двух сторон.
+                li.subcatalog-info__desc-item
+                  b Перегородки
+                  span : каркасно-щитовые из бруса 40х50мм. подшита вагонкой с двух сторон.
+                li.subcatalog-info__desc-item
+                  b Высота помещения
+                  span : 2.1м.
+                li.subcatalog-info__desc-item
+                  b Потолок
+                  span : вагонка.
+                li.subcatalog-info__desc-item
+                  b Утепление пола
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Утепление стен
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Утепление потолка
+                  span : 150мм.
+                li.subcatalog-info__desc-item
+                  b Крыша
+                  span : Кровля-оцинкованное профильное железо С20. Высота конька 700мм.
+                li.subcatalog-info__desc-item
+                  b Окна
+                  span : ПВХ,однокамерные панорамные.
+                li.subcatalog-info__desc-item
+                  b Двери межкомнатные
+                  span : Филенчатые.
+                li.subcatalog-info__desc-item
+                  b Двери входные
+                  span : ПВХ двухстворчатая.
+
+            li.subcatalog-info__item(data-accordion-title-id="4")
+              .subcatalog-info__block
+                label.checkbox__label(for="stage-4")
+                  input.checkbox(type="checkbox" id="stage-4")
+                  span.checkbox__fake
+                  span.checkbox__title Утепленный 150мм
+                  .subcatalog-info__box
+                    .subcatalog-info__box-title 950 руб
+
+        .subcatalog-info__inner
+          .subcatalog-info__services
+            h2.subcatalog-main__title Каркасно-модульный дом Венеция 4x4,6 м с террасой, кухней и спальней
+              ul.subcatalog-info__services-list
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-1")
+                      input.checkbox(type="checkbox" id="item-1")
+                      span.checkbox__fake
+                      span.checkbox__title Сборка на участке
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-2")
+                      input.checkbox(type="checkbox" id="item-2")
+                      span.checkbox__fake
+                      span.checkbox__title Бетонные армированные плиты
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-3")
+                      input.checkbox(type="checkbox" id="item-3")
+                      span.checkbox__fake
+                      span.checkbox__title Установка свайного фундамента
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-4")
+                      input.checkbox(type="checkbox" id="item-4")
+                      span.checkbox__fake
+                      span.checkbox__title Замена пола с 21мм на 27мм
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-5")
+                      input.checkbox(type="checkbox" id="item-5")
+                      span.checkbox__fake
+                      span.checkbox__title Замена пола с 21мм на 36мм
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-6")
+                      input.checkbox(type="checkbox" id="item-6")
+                      span.checkbox__fake
+                      span.checkbox__title Увеличение потолка 2,30
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-7")
+                      input.checkbox(type="checkbox" id="item-7")
+                      span.checkbox__fake
+                      span.checkbox__title Увеличение потолка 2,40
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-8")
+                      input.checkbox(type="checkbox" id="item-8")
+                      span.checkbox__fake
+                      span.checkbox__title Кровля (крашеный профлист)
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-9")
+                      input.checkbox(type="checkbox" id="item-9")
+                      span.checkbox__fake
+                      span.checkbox__title Кровля (металлочерепица)
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-10")
+                      input.checkbox(type="checkbox" id="item-10")
+                      span.checkbox__fake
+                      span.checkbox__title Увеличение конька крыши 1,5м
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-11")
+                      input.checkbox(type="checkbox" id="item-11")
+                      span.checkbox__fake
+                      span.checkbox__title Наружная отделка имитация бруса
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-12")
+                      input.checkbox(type="checkbox" id="item-12")
+                      span.checkbox__fake
+                      span.checkbox__title Внутренняя отделка класса А-В
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-13")
+                      input.checkbox(type="checkbox" id="item-13")
+                      span.checkbox__fake
+                      span.checkbox__title Двухсторонняя отделка класса А-В
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-14")
+                      input.checkbox(type="checkbox" id="item-14")
+                      span.checkbox__fake
+                      span.checkbox__title Пропенивание углов и окон
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+                li.subcatalog-info__services-item
+                  .subcatalog-info__block
+                    label.checkbox__label(for="item-15")
+                      input.checkbox(type="checkbox" id="item-15")
+                      span.checkbox__fake
+                      span.checkbox__title Аренда генератора (1 день)
+                      .subcatalog-info__box
+                        .subcatalog-info__box-title + 950 руб
+
+              .subcatalog-info__services-total
+                .subcatalog-info__services-total-text Итого за дополнительные услуги:&nbsp;
+                .subcatalog-info__services-total-price 3800 руб
+
+    section.subcatalog-payment
+      .container
+        .subcatalog-payment__inner
+          h2.subcatalog-payment__title
+            span.title Способы оплаты
+            .subcatalog-payment__title-block
+              .subcatalog-payment__title-inner
+                img.subcatalog-payment__title-img(src="images/icons/subcatalog/galka.svg" alt="")
+                .subcatalog-payment__title-text Поэтапная оплата
+              .subcatalog-payment__title-inner
+                img.subcatalog-payment__title-img(src="images/icons/subcatalog/galka.svg" alt="")
+                .subcatalog-payment__title-text Только по договору
+
+          ul.subcatalog-payment__list
+            li.subcatalog-payment__item
+              img.subcatalog-payment__item-img(src="images/icons/subcatalog/payment-1.svg" alt="")
+              .subcatalog-payment__item-text Наличные
+            li.subcatalog-payment__item
+              img.subcatalog-payment__item-img(src="images/icons/subcatalog/payment-2.svg" alt="")
+              .subcatalog-payment__item-text На расчетный счет
+            li.subcatalog-payment__item
+              img.subcatalog-payment__item-img(src="images/icons/subcatalog/payment-3.svg" alt="")
+              .subcatalog-payment__item-text Кредит
+              a.subcatalog-payment__item-btn(href="#") Узнать больше
+                img(src="images/icons/subcatalog/arrow-right.svg" alt="")
+            li.subcatalog-payment__item
+              img.subcatalog-payment__item-img(src="images/icons/subcatalog/payment-4.svg" alt="")
+              .subcatalog-payment__item-text Материнский капитал
+              a.subcatalog-payment__item-btn(href="#") Узнать больше
+                img(src="images/icons/subcatalog/arrow-right.svg" alt="")
+
+    section.subcatalog-work
+      .container
+        .subcatalog-work__inner
+          h2.subcatalog-work__title.title Как мы работаем
+          ul.subcatalog-work__list
+            li.subcatalog-work__item(data-step="1")
+              .subcatalog-work__item-title Подробный расчет стоимости
+              .subcatalog-work__item-text Действителен в течение 7 дней
+            li.subcatalog-work__item(data-step="2")
+              .subcatalog-work__item-title Согласовываем проект
+              .subcatalog-work__item-text Помогаем с выбором проекта. Согласовываем планировку и комплектацию
+            li.subcatalog-work__item(data-step="3")
+              .subcatalog-work__item-title Заключаем договор
+              .subcatalog-work__item-text В офисе или дистанционно. Авансовая оплата 30%
+            li.subcatalog-work__item(data-step="4")
+              .subcatalog-work__item-title Доставляем материалы
+              .subcatalog-work__item-text Вторая оплата до 60%
+            li.subcatalog-work__item(data-step="5")
+              .subcatalog-work__item-title Возводим строение
+              .subcatalog-work__item-text Качественно и профессионально возводим постройку
+            li.subcatalog-work__item(data-step="6")
+              .subcatalog-work__item-title Вы принимаете готовую постройку
+              .subcatalog-work__item-text Подписание акта приема-передачи и окончательная оплата
+
+    //- .container
+    //-     .subcatalog-video
+    //-         ul
+    //-             li
+    //-                 .progress.one(data-step="1")
+    //-                     .progress-round
+    //-                         p 1
+    //-                         img.progress-image(src="images/icons/subcatalog/galka.svg" alt="")
+    //-                 p Add to cart
+    //-             li
+    //-                 .progress.two(data-step="2")
+    //-                     .progress-round
+    //-                         p 2
+    //-                         img.progress-image(src="images/icons/subcatalog/galka.svg" alt="")
+    //-                 p Fill details
+    //-             li
+    //-                 .progress.three(data-step="3")
+    //-                     .progress-round
+    //-                         p 3
+    //-                         img.progress-image(src="images/icons/subcatalog/galka.svg" alt="")
+    //-                 p Make payment
+    //-             li
+    //-                 .progress.four(data-step="4")
+    //-                     .progress-round
+    //-                         p 4
+    //-                         img.progress-image(src="images/icons/subcatalog/galka.svg" alt="")
+    //-                 p Order in progress
+    //-             li
+    //-                 .progress.five(data-step="5")
+    //-                     .progress-round
+    //-                         p 5
+    //-                         img.progress-image(src="images/icons/subcatalog/galka.svg" alt="")
+    //-                 p Order arrived
+
+
+
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите рассчитать&nbsp;
+              | стоимость проекта?
+              | Это просто!
+            p.section-dop__text.
+              Оставьте заявку и наши консультанты рассчитают стоимость
+              Вашего проекта бесплатно и быстро!
+          button.section-dop__btn.btn.btn-big.btn-primary РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА
+
+  include pug/includes/footer.pug

@@ -1,0 +1,156 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(#f9f9ff, 0.85);
+  backdrop-filter: blur(0);
+
+  &.is--active {
+    display: block;
+    backdrop-filter: blur(24.5px);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  width: 104.5rem;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 2px 4px 22px rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, -50%);
+
+  &.is--active {
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    color: var(--blue-dark);
+    font-weight: 700;
+    font-size: 3.2rem;
+    font-family: Inter, sans-serif;
+    line-height: 4rem;
+  }
+
+  &-inner {
+    position: relative;
+    padding: 4.5rem 4rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 4.5rem;
+    right: 4rem;
+    cursor: pointer;
+  }
+
+  &__block {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    &-title {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-subtitle {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-family: "Avenir";
+    }
+
+    &-text {
+      font-size: 1.4rem;
+    }
+
+    .register__form-block {
+      justify-content: center;
+    }
+
+    .register__submit {
+      justify-content: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      margin-top: 1.6rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 48%;
+      height: 16.3rem;
+      border: 1px solid rgba(#000, 0.1);
+      border-radius: 1rem;
+      box-shadow: 2px 4px 9px rgba(#000, 0.1);
+    }
+
+    &-img {
+    }
+  }
+
+  &__submit {
+    margin-left: auto;
+
+    &-wrapper {
+      align-items: center;
+      margin-top: 5rem;
+    }
+
+    &-text {
+      display: block;
+      margin-left: 7rem;
+      opacity: 0.6;
+    }
+  }
+
+  &-image {
+    position: relative;
+    width: 7.5rem;
+    height: 8.2rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    &__inline {
+      gap: 0.6rem;
+      margin-top: 1.3rem;
+    }
+
+    &__pic {
+      width: 100%;
+    }
+
+    &__price {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      height: 2.6rem;
+      padding: 0.5rem 0;
+      text-align: center;
+      background: rgba(#fff, 0.5);
+      backdrop-filter: blur(10px);
+    }
+  }
+}
+
+[data-modal-2],
+[data-modal-3] {
+  width: 60rem;
+}

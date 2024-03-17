@@ -1,0 +1,167 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.about
+      .container
+        +breadcrumbs("Главная", "О нас")
+        .about__inner
+          .about__inner-content
+            h1.catalog__title.title О компании
+            p.subtitle.
+              Если вы дорожите своими финансами, временем и душевным равновесием,
+              если вам нужна качественная, красивая постройка из экологически чистых материалов,
+              то вам к нам!
+
+          .about__inner-content
+            .about__block
+              img.about__inner-img(src="images/icons/about/galka.svg" alt="")
+              p.individual-info__block-text Работаем в сфере строительства более 10 лет!
+              ul.individual-info__block-list
+                li.individual-info__block-item Современные дачные КАРКАСНЫЕ ДОМА
+                li.individual-info__block-item ОТКРЫТЫЕ и ОСТЕКЛЁННЫЕ БЕСЕДКИ из мини-бруса 45мм
+                li.individual-info__block-item Индивидуальные БАНИ под ключ
+                li.individual-info__block-item БЫТОВКИ и хозяйственные постройки
+
+        .main-slider__btns
+          button.main-slider__btn.btn.btn-rounded(data-show-modal)
+            img(src="images/icons/chevron-right.svg" alt="")
+          button.main-slider__btn-link.btn.btn-link Смотреть проекты
+
+    section.about-production
+      .container
+        .about-production__title ПРОИЗВОДСТВЕННОЕ ИЗГОТОВЛЕНИЕ
+        .about-production__subtitle.
+          Производственное изготовление позволяет значительно повысить качество и снизить стоимость итогового продукта.
+          Самостоятельно закупаем материалы у наших поставщиков и строим на собственном производстве,
+          не перекупая готовые изделия.
+
+        .about-production__items
+          .about-production__item
+            h3.about-production__title ТОЛЬКО КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ
+
+          .about-production__item
+            ul.about-production__list
+              li.about-production__list-item Фундамент
+              li.about-production__list-item Усиленный каркас
+              li.about-production__list-item Наружная и внутренняя отделка
+              li.about-production__list-item Двойной пол
+              li.about-production__list-item Долговечная кровля
+              li.about-production__list-item Окна и двери не нужно докупать отдельно
+
+    section.section.section-abs
+      .container
+        .swiper.abs-slider
+          .swiper-wrapper
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded Оставить заявку
+
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded Оставить заявку
+
+          .abs-slider-pagination.swiper-pagination
+
+    section.about-recommends
+      .container
+        h2.about-recommends__title Главное для нас, работать так, что-бы наши заказчики обращались к нам еще
+          | и рекомендовали своим знакомым. На все наши строения распространяется гарантия.
+
+        .about-recommends__content
+          img.about-recommends__img(src="images/about/house.png" alt="")
+          ul.about-recommends__list
+            li.about-recommends__item
+              h3.about-recommends__item-title ВЫСТАВОЧНЫЕ ОБРАЗЦЫ
+              p.about-recommends__item-text.
+                Увидеть, ощутить себя внутри и обсудить необходимые размеры с нашими специалистами возможно по адресу:
+                Московская область г.Ступино ул.Промышленная
+            li.about-recommends__item
+              h3.about-recommends__item-title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+              p.about-recommends__item-text.
+                подробный расчёт стоимости «без сюрпризов». при необходимости выезжаем на участок.
+            li.about-recommends__item
+              h3.about-recommends__item-title СОСТАВЛЕНИЕ ПЛАНА ГОТОВОГО ИНТЕРЬЕРА
+              p.about-recommends__item-text.
+                Наши специалисты ответят на все Ваши вопросы, подскажут по сезону, размеру, с удовольствием подберут
+                всё необходимое для Вашего удобства, комфорта и индивидуальности!!!
+
+    section.section.section-advantages(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        h2.section-advantages__title.section-title Наши преимущества
+        ul.section-advantages__list.advantages
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Работаем строго по договору
+              p.advantages__item-text.
+                Стоимость строительсва фиксированная.
+                И все наши обязательства прописаны в договоре.
+            img.advantages__item-icon(src="images/index/advantages/1.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Выставка и собственное производство
+              p.advantages__item-text.
+                Лучшее соотношение цены и качества.
+                К нам возвращаются наши клиенты и рекомендуют своим знакомым.
+            img.advantages__item-icon(src="images/index/advantages/2.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Честная цена и понятные условия
+              p.advantages__item-text.
+                Поэтапная оплата. Нет скрытых платежей и мелких шрифтов.
+            img.advantages__item-icon(src="images/index/advantages/3.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Экологически чистый материал
+              p.advantages__item-text.
+                Сертифицированные, экологичные материалы от проверенных поставщиков.
+            img.advantages__item-icon(src="images/index/advantages/4.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Фотоотчет процесса строительства
+              p.advantages__item-text.
+                Бесплатный фото или видео отчет (по договорённости)
+
+            img.advantages__item-icon(src="images/index/advantages/5.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Гарантийное обслуживание любой постройки
+              p.advantages__item-text.
+                Даем гарантию не на словах.
+            img.advantages__item-icon(src="images/index/advantages/6.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Более 7 лет опыта
+              p.advantages__item-text.
+                Современное и качественное строительство, опытными бригадами.
+            img.advantages__item-icon(src="images/index/advantages/7.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Индивидуальные проекты
+              p.advantages__item-text.
+                Возможны изменения проектов из каталога и строительство по индивидуальным планам.
+            img.advantages__item-icon(src="images/index/advantages/8.svg" alt="")
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите узнавать&nbsp;
+              | о строящихся объектах, акциях и спецпредложениях?
+            p.section-dop__text.
+              Подпишитесь на нашу группу ВКонтакте и узнавайте
+              свежие новости и полезную информацию раньше всех!
+          button.section-dop__btn.btn.btn-primary Подписаться НА ГРУППУ ВКОНТАКТЕ
+
+  include pug/includes/footer.pug

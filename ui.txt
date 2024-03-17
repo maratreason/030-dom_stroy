@@ -1,0 +1,131 @@
+Заголовок слайдера hero на главной странице
+Font Inter
+Weight 700 Size 48px Line height 55px
+
+текст слайдера:
+font-family: 'Montserrat';
+Weight 500 Size 16px Line height 19.5px
+
+h2 главной страницы:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 42px;
+line-height: 51px;
+
+Другой подзаголовок h2, который с жирным текстом и нормальным:
+font-family: 'Inter';
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+Серый маленький текст:
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: rgba(0, 0, 0, 0.6);
+
+Кнопка:
+font-family: 'Inter';
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+padding: 21px 50px;
+background: #353D83;
+border-radius: 30px;
+
+Круглая кнопка Оставить заявку:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #212864;
+border: 1px solid #D79500;
+
+h3 в блоке Наши преимущества:
+font-family: 'Inter';
+font-weight: 500;
+font-size: 20px;
+line-height: 21px;
+
+Текст в блоке Наши преимущества:
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: rgba(0, 0, 0, 0.6);
+
+Обычный текст:
+font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+Заголовок h2 Отзывы слайдер:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #808080;
+
+h3 Имя отзывы слайдер:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 22px;
+line-height: 27px;
+color: #000000;
+
+p текст отзывы слайдер:
+font-family: 'Montserrat';
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #333333;
+
+текст внизу отзывы слайдер, под желтой полоской:
+font-family: 'Inter';
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: rgba(0, 0, 0, 0.6);
+
+Контакты Адрес:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 22px;
+line-height: 27px;
+color: #000000;
+
+Контакты текст:
+font-family: 'Inter';
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+Контакты телефон:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: #000000;
+
+Контакты Email:
+font-family: 'Montserrat';
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+
+Футер Желтая кнопка:
+font-family: 'Inter';
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+color: #FFC239;
+padding: 18px 23px;

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&amp;display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/svg+xml">
+    <title>Строительная компания ДомСтрой</title>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="menu">
+        <div class="container">
+          <div class="menu__top"><a class="menu__top-logo logo" href="/">
+              <div class="logo__text">СТРОИТЕЛЬНАЯ КОМПАНИЯ</div><img class="logo__img" src="images/icons/logo.svg" alt=""></a>
+            <ul class="menu__top-info menu-info">
+              <li class="menu-info__item"><span class="menu-info__text">Пишите нам:&nbsp;</span><a class="menu-info__link" href="#">domstroy-st@bk.ru</a></li>
+              <li class="menu-info__item"><span class="menu-info__text">Моск.обл. г.Ступино ул.Промышленная</span></li>
+              <li class="menu-info__item"><span class="menu-info__text">Пн-Сб 9:00-18:00, Вс - выходной</span></li>
+            </ul>
+            <div class="menu__top-phones menu-phones"><a class="menu-phones__item" href="#">+7 (495) 142-07-25</a><a class="menu-phones__item" href="#">+7 (977) 908-02-50</a></div>
+            <div class="menu__top-buttons menu-buttons">
+              <div class="menu-buttons__btn btn btn-outlined" data-show-modal-6>Заказать звонок</div>
+              <ul class="menu-buttons__social menu-social">
+                <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/youtube.svg" alt=""></a></li>
+                <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/instagram.svg" alt="inst"></a></li>
+                <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/vk.svg" alt=""></a></li>
+                <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/whatsapp.svg" alt=""></a></li>
+                <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/telegram.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="menu__top-burger">
+              <div class="burger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__middle">
+        <div class="container">
+          <div class="menu__middle-inner"><a class="menu__middle-link menu__middle-link--active" href="/">Главная</a><a class="menu__middle-link" href="/equipment.html">Комплектация</a><a class="menu__middle-link" href="/customer.html">Заказчику</a><a class="menu__middle-link" href="/dostavka.html">Доставка и сборка</a><a class="menu__middle-link" href="/our-works.html">Наши работы</a><a class="menu__middle-link" href="/">Контакты</a></div>
+        </div>
+      </div>
+      <div class="menu__bottom">
+        <div class="container">
+          <div class="menu__bottom-inner"><a class="menu__bottom-link" href="/catalog.html">Каталог домов</a><a class="menu__bottom-link" href="/catalog.html">Каталог бытовок</a><a class="menu__bottom-link" href="/catalog.html">Каталог беседок</a><a class="menu__bottom-link" href="/catalog.html">Каталог бань</a><a class="menu__bottom-link" href="/catalog.html">Каталог хоз. построек</a></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="subcatalog">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каркасные дома</a></li>
+            </ul>
+          </div>
+          <h1 class="catalog__title title">Каркасные дома</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            
+          </p>
+        </div>
+      </section>
+      <section class="subcatalog__goods">
+        <div class="container">
+          <div class="subcatalog__goods-inner">
+            <aside class="subcatalog__filter aside">
+              <div class="aside-block aside-block__top"><img class="aside-block__img" src="images/icons/aside/aside-filter.svg" alt=""><span class="aside-block__title">Фильтр</span></div>
+              <div class="aside-block aside-block__price">
+                <div class="aside-block__title">Стоимость</div>
+                <div class="aside-block__item">
+                  <div class="aside-block__range">
+                    <div class="aside-block__price-input">
+                      <div class="field">
+                        <input class="input input-range input-min" type="text" value="2500 ₽">
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <input class="input input-range input-max" type="text" value="7500 ₽">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="aside-block__range-input range-input">
+                      <input class="range-min" type="range" min="0" max="10000" value="2500" step="10">
+                      <input class="range-max" type="range" min="0" max="10000" value="7500" step="10">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-block aside-block__square">
+                <div class="aside-block__title">Площадь</div>
+                <div class="aside-block__item">
+                  <div class="aside-block__range">
+                    <div class="aside-block__price-input">
+                      <div class="field">
+                        <input class="input input-range input-min" type="text" value="20 ㎡">
+                      </div>
+                      <div class="separator">-</div>
+                      <div class="field">
+                        <input class="input input-range input-max" type="text" value="350 ㎡">
+                      </div>
+                    </div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="aside-block__range-input range-input">
+                      <input class="range-min" type="range" min="20" max="1000" value="20" step="10">
+                      <input class="range-max" type="range" min="20" max="1000" value="350" step="10">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-block">
+                <div class="aside-block__title">Этажность</div>
+                <div class="aside-block__item">
+                  <div class="aside-block__checkboxes">
+                    <label class="checkbox__label" for="level-1">
+                      <input class="checkbox" type="checkbox" id="level-1"><span class="checkbox__fake"></span><span class="checkbox__text">1 этаж</span>
+                    </label>
+                    <label class="checkbox__label" for="level-2">
+                      <input class="checkbox" type="checkbox" id="level-2" checked><span class="checkbox__fake"></span><span class="checkbox__text">2 этажа</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-block">
+                <div class="aside-block__title">Размеры</div>
+                <div class="aside-block__item">
+                  <ul class="aside-block__sizes-list">
+                    <li class="aside-block__sizes-item" data-size-btn data-size="6x7">6x7</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="8x8">8x8</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="8x10">8x10</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="10x10">10x10</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="10x12">10x12</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="12x12">12x12</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="12x14">12x14</li>
+                    <li class="aside-block__sizes-item is--active" data-size-btn data-size="14x14">14x14</li>
+                    <li class="aside-block__sizes-item is--active" data-size-btn data-size="16x16">16x16</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="18x18">18x18</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="20x20">20x20</li>
+                    <li class="aside-block__sizes-item" data-size-btn data-size="20x24">20x24</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="aside-block">
+                <div class="aside-block__title">Форма крыши</div>
+                <div class="aside-block__item">
+                  <div class="aside-block__checkboxes">
+                    <label class="checkbox__label" for="odnoskatnaya" data-roof="1">
+                      <input class="checkbox" type="checkbox" id="odnoskatnaya"><span class="checkbox__fake"></span><span class="checkbox__text">Односкатная</span>
+                    </label>
+                    <label class="checkbox__label" for="dvuhskatnaya" data-roof="2">
+                      <input class="checkbox" type="checkbox" id="dvuhskatnaya" checked><span class="checkbox__fake"></span><span class="checkbox__text">Двухскатная</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-block">
+                <div class="aside-block__title">Количество спален</div>
+                <div class="aside-block__item">
+                  <div class="aside-block__checkboxes">
+                    <label class="checkbox__label" for="odnaspalnya" data-room="1">
+                      <input class="checkbox" type="checkbox" id="odnaspalnya"><span class="checkbox__fake"></span><span class="checkbox__text">1 спальня</span>
+                    </label>
+                    <label class="checkbox__label" for="dvespalni" data-room="2">
+                      <input class="checkbox" type="checkbox" id="dvespalni" checked><span class="checkbox__fake"></span><span class="checkbox__text">2 спальни</span>
+                    </label>
+                    <label class="checkbox__label" for="trispalni" data-room="3">
+                      <input class="checkbox" type="checkbox" id="trispalni" checked><span class="checkbox__fake"></span><span class="checkbox__text">3 спальни</span>
+                    </label>
+                    <label class="checkbox__label" for="chetyrespalni" data-room="4">
+                      <input class="checkbox" type="checkbox" id="chetyrespalni" checked><span class="checkbox__fake"></span><span class="checkbox__text">4 спальни</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-block">
+                <div class="aside-block__buttons">
+                  <button class="btn btn-primary">Показать</button>
+                  <button class="btn btn-primary">Сбросить</button>
+                </div>
+              </div>
+            </aside>
+            <div class="subcatalog__items">
+              <div class="subcatalog__items-sorting sorting">
+                <p class="sorting__title">Сортировать:</p>
+                <div class="select select-bordered select-sm form-control" data-select>
+                  <div class="select__current"><span>Площадь по возрастанию</span>
+                    <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                  </div>
+                  <ul class="select__list">
+                    <li class="select__item">Цена по возрастанию</li>
+                    <li class="select__item">Цена по убыванию</li>
+                    <li class="select__item">Площадь по возрастанию</li>
+                    <li class="select__item">Площадь по убыванию</li>
+                    <li class="select__item">По популярности</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="subcatalog__items-goods goods">
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="card"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="subcatalog__items-pagination pagination">
+                <div class="pagination__pages"><a class="pagination__page--active" href="#">9&nbsp;</a><span>/&nbsp;</span><a class="pagination__page" href="#">124</a></div>
+                <div class="pagination__line"></div>
+                <button class="pagination__btn btn btn-big-rounded">Показать больше</button>
+              </div>
+            </div>
+          </div>
+          <div class="subcatalog__subtitle">
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-offer__title section-title">Предложения для вас</h2>
+          <div class="section-offer__tabs">
+            <div class="tabs__header">
+              <div class="tabs__header-item btn btn-warning">Лидеры продаж</div>
+              <div class="tabs__header-item btn btn-gray">Новинки</div>
+              <div class="tabs__header-item btn btn-gray">Со скидкой</div>
+            </div>
+            <div class="swiper offer-slider">
+              <div class="tabs__content swiper-wrapper">
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-2.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-3.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-4.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-1.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-2.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+                <div class="tabs__content-item card swiper-slide"><img class="card__img" src="images/index/card-3.jpg" alt="">
+                  <div class="card__content">
+                    <h3 class="card__title">Каркасный дом с балконом LK-2</h3>
+                    <div class="card__info">
+                      <div class="card__info-item">Размер:&nbsp;<span class="card__info-value">4х6 м</span></div>
+                      <div class="card__info-item">Площадь:&nbsp;<span class="card__info-value">34.8 м2</span></div>
+                      <div class="card__info-item">Количество комнат:&nbsp;<span class="card__info-value">3 шт</span></div>
+                    </div>
+                    <div class="card__price">940 000 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer-slider__btns">
+                <button class="offer-slider__btn offer-slider__btn--left"><img src="images/icons/middle-chevron-left.svg" alt=""></button>
+                <button class="offer-slider__btn offer-slider__btn--right"><img src="images/icons/middle-chevron-right.svg" alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-ours">
+        <div class="container">
+          <h2 class="section-offer__title section-title">Наши работы
+            <div class="ours-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/1.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/2.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/3.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/1.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/2.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+                <div class="card__picture swiper-slide"><img class="card__picture-img" src="images/our-works/3.jpg" alt="">
+                  <h3 class="card__picture-title">Каркасный дом с балконом LK-2</h3>
+                </div>
+              </div>
+              <div class="ours-slider__btns">
+                <button class="ours-slider__btn ours-slider__btn--left"><img src="images/icons/chevron-right-white.svg" alt=""></button>
+                <button class="ours-slider__btn ours-slider__btn--right"><img src="images/icons/chevron-right-white.svg" alt=""></button>
+              </div>
+            </div>
+          </h2>
+        </div>
+      </section>
+      <section class="section-dop" style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)">
+        <div class="container">
+          <div class="section-dop__inner">
+            <div class="section-dop__content">
+              <h2 class="section-dop__title"><span class="bold-text">Хотите рассчитать&nbsp;</span>стоимость проекта?
+                Это просто!
+              </h2>
+              <p class="section-dop__text">
+                Оставьте заявку и наши консультанты рассчитают стоимость
+                Вашего проекта бесплатно и быстро!
+              </p>
+            </div>
+            <button class="section-dop__btn btn btn-big btn-primary">РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer__top menu__top"><a class="menu__top-logo logo" href="#">
+            <div class="logo__text">СТРОИТЕЛЬНАЯ КОМПАНИЯ</div><img class="logo__img" src="images/icons/logo.svg" alt=""></a>
+          <ul class="menu__top-info menu-info">
+            <li class="menu-info__item"><span class="menu-info__text">Пишите нам:&nbsp;</span><a class="menu-info__link" href="#">domstroy-st@bk.ru</a></li>
+            <li class="menu-info__item"><span class="menu-info__text">Моск.обл. г.Ступино ул.Промышленная</span></li>
+            <li class="menu-info__item"><span class="menu-info__text">Пн-Сб 9:00-18:00, Вс - выходной</span></li>
+          </ul>
+          <div class="menu__top-phones menu-phones"><a class="menu-phones__item" href="#">+7 (495) 142-07-25</a><a class="menu-phones__item" href="#">+7 (977) 908-02-50</a></div>
+          <div class="menu__top-buttons menu-buttons">
+            <h2 class="footer__title">Мы в социальных сетях:</h2>
+            <ul class="menu-buttons__social menu-social">
+              <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/youtube.svg" alt=""></a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/instagram.svg" alt="inst"></a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/vk.svg" alt=""></a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/whatsapp.svg" alt=""></a></li>
+              <li class="menu-social__item"><a class="menu-social__link" href="#"><img class="menu-social__icon" src="images/icons/social/telegram.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__middle">
+          <div class="footer__block">
+            <div class="footer__title">ПРОДУКЦИЯ</div>
+            <div class="footer__middle-list"><a class="footer__menu-link" href="#">Каркасные дома</a><a class="footer__menu-link" href="#">Модульные дома</a><a class="footer__menu-link" href="#">Бани “Под ключ”</a><a class="footer__menu-link" href="#">Беседки</a><a class="footer__menu-link" href="#">Бытовки (утепленные)</a><a class="footer__menu-link" href="#">Хоз. постройки (без утепления)</a></div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__title">КОМПЛЕКТАЦИЯ</div>
+            <div class="footer__middle-list"><a class="footer__menu-link" href="#">Комплектация домов</a><a class="footer__menu-link" href="#">Комплектация бань</a><a class="footer__menu-link" href="#">Комплектация беседок</a><a class="footer__menu-link" href="#">Комплектация бытовок</a><a class="footer__menu-link" href="#">Комплектация хоз. построек</a></div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__title">Заказчику</div>
+            <div class="footer__middle-list"><a class="footer__menu-link" href="#">Индивидуальное строительство</a><a class="footer__menu-link" href="#">Фиксированные цены</a><a class="footer__menu-link" href="#">Дистанционное оформление договора</a><a class="footer__menu-link" href="#">Материнский капитал</a><a class="footer__menu-link" href="#">Порядок оплаты</a><a class="footer__menu-link" href="#">Процесс заказа</a></div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__title">ПОЛЕЗНО</div>
+            <div class="footer__middle-list"><a class="footer__menu-link" href="#">Доставка и сборка</a><a class="footer__menu-link" href="#">Контакты</a><a class="footer__menu-link" href="#">Наши работы</a></div>
+          </div>
+          <div class="footer__block footer__block-buttons">
+            <div class="footer__block-btns">
+              <button class="btn btn-warning-outlined" data-show-modal>ЧЕСТНЫЙ КАЛЬКУЛЯТОР БЕСЕДОК</button>
+              <button class="btn btn-warning-outlined" data-show-modal-6>СВЯЗАТЬСЯ С НАМИ</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyrignt">Copyright © “ДОМСТРОЙ” 2023. Все права защищены.</div>
+          <div class="footer__bottom-list"><a class="footer__bottom-link" href="#">Политика конфиденциальности</a><a class="footer__bottom-link" href="#">Пользовательское соглашение</a><a class="footer__bottom-link" href="#">Cookies</a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" data-modal>
+      <div class="modal-inner"><img class="modal__close" src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close>
+        <h2 class="modal__title">Рассчитать стоимость</h2>
+        <div class="modal__block">
+          <form class="form modal__form" action="/" enctype="multipart/form-data">
+            <div class="form-2-col d-flex">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-control" for="">Что желаете построить? *</label>
+                  <div class="select form-control" data-select>
+                    <div class="select__current"><span>Дом</span>
+                      <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                    </div>
+                    <ul class="select__list">
+                      <li class="select__item">Дом</li>
+                      <li class="select__item">Дача</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Размер объекта*</label>
+                  <div class="form-inline">
+                    <input class="input input-sm form-control" type="number" value="4" min="4"><span>X</span>
+                    <input class="input input-sm form-control" type="number" value="8" min="8"><span>м</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Название или код товара</label>
+                  <input class="input form-control" type="text" placeholder="Введите название или код товара">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Фундамент *</label>
+                  <div class="select form-control" data-select>
+                    <div class="select__current"><span>Уже есть</span>
+                      <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                    </div>
+                    <ul class="select__list">
+                      <li class="select__item">Уже есть</li>
+                      <li class="select__item">Сделать фундамент</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Утепление стен *</label>
+                  <div class="select form-control" data-select>
+                    <div class="select__current"><span>Без утепления</span>
+                      <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                    </div>
+                    <ul class="select__list">
+                      <li class="select__item">Без утепления</li>
+                      <li class="select__item">Стандартный утеплитель</li>
+                      <li class="select__item">Утеплитель из Германии</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Этажность *</label>
+                  <div class="select form-control" data-select>
+                    <div class="select__current"><span>1 этаж</span>
+                      <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                    </div>
+                    <ul class="select__list">
+                      <li class="select__item">Цокольный этаж</li>
+                      <li class="select__item">1 этаж</li>
+                      <li class="select__item">2 этаж</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-control" for="">Адрес строительства *</label>
+                  <input class="input form-control" type="text" placeholder="Введите адрес строительства">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Если у Вас есть проект/чертеж, загрузите его</label>
+                  <input class="input form-control" type="file" data-input-file data-buttonText="Your label.">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Имя*</label>
+                  <input class="input form-control" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Телефон*</label>
+                  <input class="input form-control" type="text" placeholder="+7 (900) 000-00-00">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Электронная почта</label>
+                  <input class="input form-control" type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Оставить комментарий</label>
+                  <input class="input form-control" type="text" placeholder="Введите комментарий">
+                </div>
+              </div>
+            </div>
+            <button class="modal__submit btn btn-big btn-primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-2>
+      <div class="modal-inner"><img class="modal__close" src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close>
+        <h2 class="modal__title">Кровля</h2>
+        <div class="modal__block">
+          <form class="form modal__form" action="/" enctype="multipart/form-data">
+            <div class="form-row">
+              <div class="form-group form-flex">
+                <label for="">Вынос:</label>
+                <button class="btn btn-primary">45 мм</button>
+                <button class="btn">75 мм</button>
+              </div>
+              <div class="form-group">
+                <label for="">Покрытие:</label>
+                <div class="form-inline modal-image__inline">
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/1.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/2.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/3.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/4.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/5.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/6.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Водоотвод:</label>
+                <div class="form-inline modal-image__inline">
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/2-1.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                  <div class="modal-image"><img class="modal-image__pic" src="images/modal/modal-2/2-2.jpg" alt=""><span class="modal-image__price">8 720 ₽</span></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-3>
+      <div class="modal-inner"><img class="modal__close" src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close>
+        <h2 class="modal__title">Основание</h2>
+        <div class="modal__block">
+          <div class="form-group form-short">
+            <div class="select form-control" data-select>
+              <div class="select__current"><span>Обвязка и пол</span>
+                <div class="btn-dropdown__icon"></div><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon>
+              </div>
+              <ul class="select__list">
+                <li class="select__item">Обвязка и пол</li>
+                <li class="select__item">Бетонный пол</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal__block">
+          <div class="form-group">
+            <label>Тип основания:</label>
+            <div class="modal__block-list">
+              <div class="modal__block-item"><img class="modal__block-img" src="images/modal/modal-3/1.png" alt=""><span class="modal__block-text">Блочный</span><span class="modal__block-price">1 720 ₽</span></div>
+              <div class="modal__block-item"><img class="modal__block-img" src="images/modal/modal-3/2.png" alt=""><span class="modal__block-text">Свайно-винтовой</span><span class="modal__block-price">13 720 ₽</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-4>
+      <div class="modal-inner"><img class="modal__close" src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close>
+        <h2 class="modal__title">Рассчитать стоимость</h2>
+        <div class="modal__block">
+          <form class="form modal__form" action="/" enctype="multipart/form-data">
+            <div class="form-2-col d-flex">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-control" for="">Имя*</label>
+                  <input class="input form-control" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Телефон*</label>
+                  <input class="input form-control" type="text" placeholder="+7 (900) 000-00-00">
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Адрес строительства*</label>
+                  <input class="input form-control" type="text" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-control" for="">Желаемая дата доставки</label>
+                  <div class="select form-control" data-select>
+                    <div class="select__current"><span>22.02.2023</span>
+                      <div class="btn-dropdown__icon"><img src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon></div>
+                    </div>
+                    <ul class="select__list">
+                      <li class="select__item">22.02.2023</li>
+                      <li class="select__item">23.02.2023</li>
+                      <li class="select__item">24.02.2023</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-control" for="">Комментарий к заказу</label>
+                  <textarea class="textarea form-control" placeholder="Ваш комментарий"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex modal__submit-wrapper">
+              <button class="modal__submit btn btn-big btn-primary" type="submit">Отправить</button>
+              <p class="modal__submit-text">
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,
+                в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+                на условиях и для целей, определенных в Согласии на обработку персональных данных
+                
+                
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-6>
+      <div class="modal-inner"><img class="modal__close" src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close>
+        <h2 class="modal__title">Заказать звонок</h2>
+        <div class="modal__block">
+          <form class="form modal__form" action="/" enctype="multipart/form-data">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-control" for="">Имя*</label>
+                <input class="input form-control" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <label class="form-control" for="">Телефон*</label>
+                <input class="input form-control" type="text" placeholder="+7 (900) 000-00-00">
+              </div>
+              <div class="form-group">
+                <label class="form-control" for="">Комментарий к заказу</label>
+                <textarea class="textarea form-control" placeholder="Ваш комментарий"></textarea>
+              </div>
+            </div>
+            <div class="d-flex modal__submit-wrapper">
+              <button class="modal__submit btn btn-big btn-primary" type="submit">Отправить</button>
+              <p class="modal__submit-text">
+                Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,
+                в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+                на условиях и для целей, определенных в Согласии на обработку персональных данных
+                
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

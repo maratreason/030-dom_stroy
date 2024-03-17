@@ -1,0 +1,59 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.catalog
+      .container
+        +breadcrumbs("Главная", "Каталог")
+        h1.catalog__title.title Каталог построек
+        p.subtitle.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+        .catalog__gallery.gallery
+          .gallery-fullwidth
+            a.gallery__item(href="subcatalog.html")
+              h2.gallery__title Каркасные дома
+              img.gallery__img(src="images/catalog/gallery-1.jpg" alt="Каркасные дома")
+          .gallery-2-col.d-flex
+            a.gallery__item(href="subcatalog.html")
+              h2.gallery__title Бани
+              img.gallery__img(src="images/catalog/gallery-2.jpg" alt="Бани")
+            a.gallery__item(href="subcatalog.html")
+              h2.gallery__title Беседки
+              img.gallery__img(src="images/catalog/gallery-3.jpg" alt="Беседки")
+          .gallery-2-col.d-flex
+            a.gallery__item(href="subcatalog.html")
+              h2.gallery__title Бытовки
+              img.gallery__img(src="images/catalog/gallery-4.jpg" alt="Бытовки")
+            a.gallery__item(href="subcatalog.html")
+              h2.gallery__title Хозяйственные постройки
+              img.gallery__img(src="images/catalog/gallery-5.jpg" alt="Хозяйственные постройки")
+
+        p.subtitle.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p.subtitle.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите рассчитать&nbsp;
+              | стоимость проекта?
+              | Это просто!
+            p.section-dop__text.
+              Оставьте заявку и наши консультанты рассчитают стоимость
+              Вашего проекта бесплатно и быстро!
+          button.section-dop__btn.btn.btn-big.btn-primary РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА
+
+
+  include pug/includes/footer.pug

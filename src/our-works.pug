@@ -1,0 +1,196 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.our-works
+      .container
+        +breadcrumbs("Главная", "Наши работы")
+        .our-works__inner
+          .our-works__inner-content
+            h1.our-works__title.title Наши работы
+        .our-works__slider
+          .tabs__header
+            .tabs__header-item.btn.btn-warning Каркасные дома
+            .tabs__header-item.btn.btn-gray Бани
+            .tabs__header-item.btn.btn-gray Беседки
+            .tabs__header-item.btn.btn-gray Бытовки
+
+          .our-works__slider-content
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/1.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/2.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/1.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/2.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/3.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/3.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/1.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/4.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+            .tabs__content-item.our-works-card(data-show-modal-5)
+              img.card__img(src="images/our-works/gallery/1.jpg" alt="")
+              .card__content
+                h2.card__title Каркасный дом с балконом LK-2
+                p.card__text.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .card__content-chevron
+                  img(src="images/icons/chevron-our-works.svg" alt="chevron-our-works")
+
+        .our-works__slider-modal(data-modal-5)
+          img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+          img.our-works__slider-modal-img(src="images/our-works/gallery/4.jpg" alt="")
+          .card__content
+            h2.card__title Каркасный дом с балконом LK-2
+            p.card__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+
+        p.our-works__text.
+          «ДомСтрой» — это предприятие, занимающееся строительством дачных домов и коттеджей,
+          а также бань и беседок и т.д. Мы можем предложить своим клиентам как типовые планировки из нашего
+          каталога, так и реализовать индивидуальные.
+        p.our-works__text.
+          Ответственно относимся к строительству, контролируем все этапы возведения постройки. Дорожим нашими клиентами,
+          а в ответ, они возвращаются к нам снова,  а  так же рекомендуют своим друзьям и знакомым
+
+    section.our-works__answers
+      .container
+        h2.our-works__answers-title Отзывы
+
+        .our-works__answer
+          .our-works__answer-head
+            .our-works__answer-text
+              h3.our-works__answer-title Джон Джон Джон
+              p.our-works__answer-subtitle Изготовление каркасного дома с балконом
+            .our-works__answer-rating
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+
+        .our-works__answer
+          .our-works__answer-head
+            .our-works__answer-text
+              h3.our-works__answer-title Джон Джон Джон
+              p.our-works__answer-subtitle Изготовление каркасного дома с балконом
+            .our-works__answer-rating
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+
+        .our-works__answer
+          .our-works__answer-head
+            .our-works__answer-text
+              h3.our-works__answer-title Джон Джон Джон
+              p.our-works__answer-subtitle Изготовление каркасного дома с балконом
+            .our-works__answer-rating
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+              img.rating(src="images/icons/rating.svg" alt="")
+
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+          p.our-works__content.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+
+        .our-works__pagination.pagination
+          .pagination__pages
+            a.pagination__page--active(href="#") 3&nbsp;
+            span /&nbsp;
+            a.pagination__page(href="#") 14
+
+          .pagination__line
+          button.pagination__btn.btn.btn-big-rounded Показать больше
+
+
+  include pug/includes/footer.pug

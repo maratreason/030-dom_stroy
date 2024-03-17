@@ -1,0 +1,36 @@
+.breadcrumbs {
+  padding: 5rem 0 3rem;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 25px;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+
+      &::after {
+        position: absolute;
+        top: 0.9rem;
+        right: -1.5rem;
+        width: 0.5rem;
+        height: 0.7rem;
+        background-image: url("../../images/icons/ui/breadcrumbs-chevron.svg");
+        content: "";
+      }
+    }
+
+    &:last-child {
+      color: #b7c1c5;
+    }
+  }
+
+  &__link {
+  }
+}

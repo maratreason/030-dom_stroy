@@ -1,0 +1,51 @@
+.form {
+  &-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  &-group {
+    &.form-short {
+      display: flex;
+      gap: 1.3rem;
+      align-items: center;
+      max-width: 26rem;
+    }
+
+    &.form-flex {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+
+      label {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &-control {
+  }
+
+  &-inline {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+label.form-control {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.form-2-col {
+  display: flex;
+  gap: 3.2rem;
+  margin-bottom: 2rem;
+}

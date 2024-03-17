@@ -1,0 +1,81 @@
+.btn {
+  padding: 1.4rem 3rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  border-radius: 5rem;
+  cursor: pointer;
+
+  &.btn-outlined {
+    border: 1px solid var(--blue-dark);
+  }
+
+  &.btn-rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  &.btn-wide {
+    width: 34rem;
+  }
+
+  &.btn-link {
+    border: none;
+  }
+
+  &.btn-link--primary {
+    color: var(--blue-dark);
+  }
+
+  &.btn-big {
+    padding: 2.1rem 5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+  }
+
+  &.btn-big-rounded {
+    width: 14rem;
+    height: 14rem;
+    color: var(--blue-dark);
+    border-color: var(--yellow-dark);
+    border-radius: 50%;
+  }
+
+  &.btn-gray {
+    @include button(var(--black), #eee, #eee);
+  }
+
+  &.btn-warning {
+    @include button(var(--black), var(--yellow), var(--yellow));
+
+    &-outlined {
+      color: var(--yellow);
+      background: transparent;
+      border: 1px solid var(--yellow);
+      border-radius: 5rem;
+    }
+  }
+
+  &.btn-primary {
+    @include button(var(--white), var(--blue), var(--blue));
+
+    &:hover {
+      background: var(--blue-dark);
+      border-color: var(--blue-dark);
+    }
+  }
+
+  &.btn-shadow {
+    box-shadow: 0 4px 6px rgba(#000, 0.1);
+  }
+}

@@ -1,0 +1,187 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.customer
+      .container
+        +breadcrumbs("Главная", "Заказчику")
+
+        .customer__inner
+          .customer__inner-content
+            h1.customer__title.title Заказчику
+            p.subtitle.
+              Мы ценим каждого клиента и сделаем всю работу сами. Воплощаем в жизнь проекты,
+              создавая дома для комфортной жизни.
+          img.customer__inner-img(src="images/customers/main.png" alt="customers main image")
+
+      .customer__more
+
+      .container
+        .customer__more-btn
+          p.customer__more-text Узнать больше об индивидуальном строительстве
+          .customer__more-round
+            img.customer__more-img(src="images/icons/customers/chevron-right.svg" alt="chevron-right icon")
+
+    section.customer-work
+      .container
+        .subcatalog-work__inner.customer-work__inner
+          h2.subcatalog-work__title.title Порядок оформления договора
+          ul.subcatalog-work__list
+            li.subcatalog-work__item.active(data-step="1")
+              .subcatalog-work__item-title Подробный расчет стоимости
+              .subcatalog-work__item-text Действителен в течение 7 дней
+              .subcatalog-work__item-round
+            li.subcatalog-work__item(data-step="2")
+              .subcatalog-work__item-title Согласовываем проект
+              .subcatalog-work__item-text Помогаем с выбором проекта. Согласовываем планировку
+                | и комплектацию
+              .subcatalog-work__item-round
+            li.subcatalog-work__item(data-step="3")
+              .subcatalog-work__item-title Заключаем договор
+              .subcatalog-work__item-text В офисе или дистанционно. Авансовая оплата 30%
+              .subcatalog-work__item-round
+            li.subcatalog-work__item(data-step="4")
+              .subcatalog-work__item-title Доставляем материалы
+              .subcatalog-work__item-text Вторая оплата до 60%
+              .subcatalog-work__item-round
+            li.subcatalog-work__item(data-step="5")
+              .subcatalog-work__item-title Возводим строение
+              .subcatalog-work__item-text Качественно и профессионально возводим постройку
+              .subcatalog-work__item-round
+            li.subcatalog-work__item(data-step="6")
+              .subcatalog-work__item-title Вы принимаете готовую постройку
+              .subcatalog-work__item-text Подписание акта приема-передачи и окончательная оплата
+              .subcatalog-work__item-round
+
+    section.section-dop(style="background: url(images/customers/bg-2.jpg); background-position: top;")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Дистанционное оформление договора
+            p.section-dop__text.
+              Мы рады предложить своим клиентам услугу по дистанционному
+              оформлению договоров на строительство домов и бань, для покупателей
+              у которых нет возможности приехать к нам в офис.
+
+    section.customer-discuss
+      .container
+        .customer-discuss__inner
+          ul.customer-discuss__list
+            li.customer-discuss__item
+              .customer-discuss__number 1
+              .customer-discuss__content
+                .customer-discuss__content-title Обсуждение строения и стоимость строительства
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    Позвоните или оставьте заявку на нашем сайте с параметрами
+                    интересующего строения.
+                  li.customer-discuss__content-item.
+                    После согласования планировки и комплектации, мы подготовим расчет
+                    стоимости и отправим на электронную почту.
+            li.customer-discuss__item
+              .customer-discuss__number 2
+              .customer-discuss__content
+                .customer-discuss__content-title Заключение договора на строительство объекта
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    После согласования стоимости и условий, подготавливается договор
+                    (с печатью и подписью) и отправляется на электронную почту
+                  li.customer-discuss__content-item.
+                    Вам необходимо подписать  договор и отправить нам по электронной почте,
+                    а затем внести необходимую оплату, указанную в договоре.
+            li.customer-discuss__item
+              .customer-discuss__number 3
+              .customer-discuss__content
+                .customer-discuss__content-title Строительство обьекта и сдача по завершению работ
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    В назначенную дату, завозится строй.материалы на объект- начинается
+                    строительство.Дата окончания работ прописана в договоре.
+                  li.customer-discuss__content-item.
+                    После завершения строительства подписывается Акт приемки-передачи и
+                    Вы становитесь полноправным собственником построенного объекта.
+
+    section.section.section-abs
+      .container
+        .swiper.abs-slider
+          .swiper-wrapper
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с&nbsp;
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded Оставить заявку
+
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded Оставить заявку
+
+          .abs-slider-pagination.swiper-pagination
+
+    section.section-dop(style="background: url(images/customers/bg-2.jpg); background-position: top;")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Порядок оплаты
+            p.section-dop__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nis.
+
+    section.customer-discuss
+      .container
+        .customer-discuss__inner
+          ul.customer-discuss__list
+            li.customer-discuss__item
+              .customer-discuss__number 1
+              .customer-discuss__content
+                .customer-discuss__content-title Заключаем договор
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    В офисе или дистанционно. Авансовая оплата 30%
+            li.customer-discuss__item
+              .customer-discuss__number 2
+              .customer-discuss__content
+                .customer-discuss__content-title Доставляем материалы
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    Вторая оплата до 60%
+            li.customer-discuss__item
+              .customer-discuss__number 3
+              .customer-discuss__content
+                .customer-discuss__content-title Возводим строение
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    Качественно и профессионально возводим постройку
+            li.customer-discuss__item
+              .customer-discuss__number 4
+              .customer-discuss__content
+                .customer-discuss__content-title Вы принимаете готовую постройку
+                ul.customer-discuss__content-list
+                  li.customer-discuss__content-item.
+                    Подписание акта приема-передачи и окончательная оплата
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите рассчитать&nbsp;
+              | стоимость проекта?
+              | Это просто!
+            p.section-dop__text.
+              Оставьте заявку и наши консультанты рассчитают стоимость
+              Вашего проекта бесплатно и быстро!
+          button.section-dop__btn.btn.btn-big.btn-primary РАССЧИТАТЬ СТОИМОСТЬ ПРОЕКТА
+
+  include pug/includes/footer.pug

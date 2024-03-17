@@ -1,0 +1,77 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10px; 10px / 16px = 0.625 -> 62.5%
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}

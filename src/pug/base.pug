@@ -1,0 +1,269 @@
+include mixins.pug
+
+doctype html
+html
+	head
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap")
+		link(href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet")
+		link(href="css/main.min.css" rel="stylesheet")
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="icon" href="favicon.ico" type="image/svg+xml")
+		title Строительная компания ДомСтрой
+
+	body(id="top")
+		block content
+
+		.modal(data-modal)
+			.modal-inner
+				img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+				h2.modal__title Рассчитать стоимость
+				.modal__block
+					form.form.modal__form(action="/" enctype="multipart/form-data")
+						.form-2-col.d-flex
+							.form-row
+								.form-group
+									label.form-control(for="") Что желаете построить? *
+									.select.form-control(data-select)
+										.select__current
+											span Дом
+											.btn-dropdown__icon
+												img(src="images/icons/ui/select-icon.svg"
+													alt="select dropdown item"
+													data-select-icon)
+										ul.select__list
+											li.select__item Дом
+											li.select__item Дача
+
+								.form-group
+									label.form-control(for="") Размер объекта*
+									.form-inline
+										input.input.input-sm.form-control(type="number" value="4" min="4")
+										span X
+										input.input.input-sm.form-control(type="number" value="8" min="8")
+										span м
+
+								.form-group
+									label.form-control(for="") Название или код товара
+									input.input.form-control(type="text" placeholder="Введите название или код товара")
+
+								.form-group
+									label.form-control(for="") Фундамент *
+									.select.form-control(data-select)
+										.select__current
+											span Уже есть
+											.btn-dropdown__icon
+												img(src="images/icons/ui/select-icon.svg"
+													alt="select dropdown item"
+													data-select-icon)
+										ul.select__list
+											li.select__item Уже есть
+											li.select__item Сделать фундамент
+
+								.form-group
+									label.form-control(for="") Утепление стен *
+									.select.form-control(data-select)
+										.select__current
+											span Без утепления
+											.btn-dropdown__icon
+												img(src="images/icons/ui/select-icon.svg"
+													alt="select dropdown item"
+													data-select-icon)
+										ul.select__list
+											li.select__item Без утепления
+											li.select__item Стандартный утеплитель
+											li.select__item Утеплитель из Германии
+
+								.form-group
+									label.form-control(for="") Этажность *
+									.select.form-control(data-select)
+										.select__current
+											span 1 этаж
+											.btn-dropdown__icon
+												img(src="images/icons/ui/select-icon.svg"
+													alt="select dropdown item"
+													data-select-icon)
+										ul.select__list
+											li.select__item Цокольный этаж
+											li.select__item 1 этаж
+											li.select__item 2 этаж
+
+							.form-row
+								.form-group
+									label.form-control(for="") Адрес строительства *
+									input.input.form-control(type="text" placeholder="Введите адрес строительства")
+
+								.form-group
+									label.form-control(for="") Если у Вас есть проект/чертеж, загрузите его
+									input.input.form-control(type="file" data-input-file data-buttonText="Your label.")
+
+								.form-group
+									label.form-control(for="") Имя*
+									input.input.form-control(type="text" placeholder="Ваше имя")
+
+								.form-group
+									label.form-control(for="") Телефон*
+									input.input.form-control(type="text" placeholder="+7 (900) 000-00-00")
+
+								.form-group
+									label.form-control(for="") Электронная почта
+									input.input.form-control(type="email" placeholder="Email")
+
+								.form-group
+									label.form-control(for="") Оставить комментарий
+									input.input.form-control(type="text" placeholder="Введите комментарий")
+
+						button.modal__submit.btn.btn-big.btn-primary(type="submit") Отправить
+
+
+
+		.modal(data-modal-2)
+			.modal-inner
+				img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+				h2.modal__title Кровля
+				.modal__block
+					form.form.modal__form(action="/" enctype="multipart/form-data")
+						.form-row
+							.form-group.form-flex
+								label(for="") Вынос:
+								button.btn.btn-primary 45 мм
+								button.btn 75 мм
+
+							.form-group
+								label(for="") Покрытие:
+								.form-inline.modal-image__inline
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/1.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/2.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/3.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/4.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/5.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/6.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+
+							.form-group
+								label(for="") Водоотвод:
+								.form-inline.modal-image__inline
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/2-1.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+									.modal-image
+										img.modal-image__pic(src="images/modal/modal-2/2-2.jpg" alt="")
+										span.modal-image__price 8 720 ₽
+
+
+		.modal(data-modal-3)
+			.modal-inner
+				img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+				h2.modal__title Основание
+				.modal__block
+					.form-group.form-short
+						.select.form-control(data-select)
+							.select__current
+								span Обвязка и пол
+								.btn-dropdown__icon
+								img(src="images/icons/ui/select-icon.svg" alt="select dropdown item" data-select-icon)
+							ul.select__list
+								li.select__item Обвязка и пол
+								li.select__item Бетонный пол
+
+				.modal__block
+					.form-group
+						label Тип основания:
+						.modal__block-list
+							.modal__block-item
+								img.modal__block-img(src="images/modal/modal-3/1.png" alt="")
+								span.modal__block-text Блочный
+								span.modal__block-price 1 720 ₽
+							.modal__block-item
+								img.modal__block-img(src="images/modal/modal-3/2.png" alt="")
+								span.modal__block-text Свайно-винтовой
+								span.modal__block-price 13 720 ₽
+
+
+
+		.modal(data-modal-4)
+			.modal-inner
+				img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+				h2.modal__title Рассчитать стоимость
+				.modal__block
+					form.form.modal__form(action="/" enctype="multipart/form-data")
+						.form-2-col.d-flex
+							.form-row
+								.form-group
+									label.form-control(for="") Имя*
+									input.input.form-control(type="text" placeholder="Ваше имя")
+								.form-group
+									label.form-control(for="") Телефон*
+									input.input.form-control(type="text" placeholder="+7 (900) 000-00-00")
+								.form-group
+									label.form-control(for="") Адрес строительства*
+									input.input.form-control(type="text" placeholder="Email")
+
+							.form-row
+								.form-group
+									label.form-control(for="") Желаемая дата доставки
+									.select.form-control(data-select)
+										.select__current
+											span 22.02.2023
+											.btn-dropdown__icon
+												img(src="images/icons/ui/select-icon.svg"
+													alt="select dropdown item"
+													data-select-icon)
+										ul.select__list
+											li.select__item 22.02.2023
+											li.select__item 23.02.2023
+											li.select__item 24.02.2023
+
+								.form-group
+									label.form-control(for="") Комментарий к заказу
+									textarea.textarea.form-control(placeholder="Ваш комментарий")
+
+						.d-flex.modal__submit-wrapper
+							button.modal__submit.btn.btn-big.btn-primary(type="submit") Отправить
+							p.modal__submit-text.
+								Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,
+								в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+								на условиях и для целей, определенных в Согласии на обработку персональных данных
+
+
+		.modal(data-modal-6)
+			.modal-inner
+				img.modal__close(src="images/icons/ui/modal-close-icon.svg" alt="close icon" data-modal-close)
+				h2.modal__title Заказать звонок
+				.modal__block
+					form.form.modal__form(action="/" enctype="multipart/form-data")
+						.form-row
+							.form-group
+								label.form-control(for="") Имя*
+								input.input.form-control(type="text" placeholder="Ваше имя")
+							.form-group
+								label.form-control(for="") Телефон*
+								input.input.form-control(type="text" placeholder="+7 (900) 000-00-00")
+							.form-group
+								label.form-control(for="") Комментарий к заказу
+								textarea.textarea.form-control(placeholder="Ваш комментарий")
+
+						.d-flex.modal__submit-wrapper
+							button.modal__submit.btn.btn-big.btn-primary(type="submit") Отправить
+							p.modal__submit-text.
+								Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных,
+								в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+								на условиях и для целей, определенных в Согласии на обработку персональных данных
+
+		.backdrop
+
+		script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")
+		script(src="js/main.js")

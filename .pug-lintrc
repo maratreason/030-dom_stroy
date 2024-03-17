@@ -1,0 +1,16 @@
+{
+  "validateExtensions": true,
+  "validateDivTags": true,
+  "validateAttributeSeparator": {"separator": " ", "multiLineSeparator": "\n "},
+  "validateAttributeQuoteMarks": "\"",
+  "requireSpecificAttributes": [ { "img": [ "src", "alt" ] } ],
+  "requireSpaceAfterCodeOperator": true,
+  "requireLowerCaseTags": true,
+  "requireClassLiteralsBeforeIdLiterals": true,
+  "requireIdLiteralsBeforeAttributes": true,
+  "disallowTrailingSpaces": true,
+  "disallowSpacesInsideAttributeBrackets": true,
+  "disallowLegacyMixinCall": true,
+  "disallowDuplicateAttributes": true,
+  "maximumLineLength": 120
+}

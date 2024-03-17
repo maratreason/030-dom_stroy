@@ -1,0 +1,443 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    .swiper.swiper-main-slider
+      .swiper-wrapper
+        .swiper-slide.main-slider(style="background: url(images/index/main-slider-1.jpg) rgba(0, 0, 0, 0.3); background-size: cover;")
+          .container
+            .main-slider__content
+              h2.main-slider__title СТРОИТЕЛЬСТВО ДАЧНЫХ ДОМОВ И КОТТЕДЖЕЙ
+              p.main-slider__text.
+                На участок поставляются готовые модули, производится их монтаж в короткие сроки.
+                Мы гарантируем выполнение всех взятых на себя обязательств и доступные цены.
+            .main-slider__btns
+              button.main-slider__btn.btn.btn-rounded(data-show-modal)
+                img(src="images/icons/chevron-right.svg" alt="")
+              button.main-slider__btn-link.btn.btn-link РАССЧИТАТЬ СТОИМОСТЬ
+
+        .swiper-slide.main-slider(style="background: url(images/index/main-slider-1.jpg) rgba(0, 0, 0, 0.3); background-size: cover;")
+          .container
+            .main-slider__content
+              h2.main-slider__title СТРОИТЕЛЬСТВО ДАЧНЫХ ДОМОВ И КОТТЕДЖЕЙ
+              p.main-slider__text.
+                На участок поставляются готовые модули, производится их монтаж в короткие сроки.
+                Мы гарантируем выполнение всех взятых на себя обязательств и доступные цены.
+            .main-slider__btns
+              button.main-slider__btn.btn.btn-rounded(data-show-modal)
+                img(src="images/icons/chevron-right.svg" alt="")
+              button.main-slider__btn-link.btn.btn-link РАССЧИТАТЬ СТОИМОСТЬ
+
+    section.section.section-offer
+      .container
+        h2.section-offer__title.section-title Предложения для вас
+
+        .section-offer__tabs.tabsabs-slider
+          .tabs__header
+            .tabs__header-item.btn.btn-warning Каркасные дома
+            .tabs__header-item.btn.btn-gray Бани
+            .tabs__header-item.btn.btn-gray Беседки
+            .tabs__header-item.btn.btn-gray Бытовки
+            .tabs__header-item.btn.btn-gray Хоз. постройки
+          .swiper.offer-slider
+            .tabs__content.swiper-wrapper
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-2.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-3.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-4.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-1.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-2.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+              .tabs__content-item.card.swiper-slide
+                img.card__img(src="images/index/card-3.jpg" alt="")
+                .card__content
+                  h3.card__title Каркасный дом с балконом LK-2
+                  .card__info
+                    .card__info-item Размер:&nbsp;
+                      span.card__info-value 4х6 м
+                    .card__info-item Площадь:&nbsp;
+                      span.card__info-value 34.8 м2
+                    .card__info-item Количество комнат:&nbsp;
+                      span.card__info-value 3 шт
+                  .card__price 940 000 ₽
+            .offer-slider__btns
+              button.offer-slider__btn.offer-slider__btn--left
+                img(src="images/icons/middle-chevron-left.svg" alt="")
+              button.offer-slider__btn.offer-slider__btn--right
+                img(src="images/icons/middle-chevron-right.svg" alt="")
+        button.section-offer__btn.btn.btn-big.btn-primary СМОТРЕТЬ ВСЕ ПРОЕКТЫ
+
+    section.section.section-abs
+      .container
+        .swiper.abs-slider
+          .swiper-wrapper
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded(data-show-modal-6) Оставить заявку
+
+            .swiper-slide.section-abs__inner
+              img.abs-slider__img(src="images/index/abs-1.jpg" alt="")
+              .abs-slider__content
+                h2.abs-slider__title Мы работаем с
+                  span.bold-text материнским капиталом!
+                .abs-slider__modal
+                  button.btn.btn-big-rounded Оставить заявку
+
+          .abs-slider-pagination.swiper-pagination
+          .abs-slider__btns
+            button.abs-slider__btn.abs-slider__btn--left
+              img(src="images/icons/chevron-line-left.svg" alt="")
+            button.abs-slider__btn.abs-slider__btn--right
+              img(src="images/icons/chevron-line-right.svg" alt="")
+
+    section.section.section-advantages(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        h2.section-advantages__title.section-title Наши преимущества
+        ul.section-advantages__list.advantages
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Работаем строго по договору
+              p.advantages__item-text.
+                Стоимость строительсва фиксированная.
+                И все наши обязательства прописаны в договоре.
+            img.advantages__item-icon(src="images/index/advantages/1.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Выставка и собственное производство
+              p.advantages__item-text.
+                Лучшее соотношение цены и качества.
+                К нам возвращаются наши клиенты и рекомендуют своим знакомым.
+            img.advantages__item-icon(src="images/index/advantages/2.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Честная цена и понятные условия
+              p.advantages__item-text.
+                Поэтапная оплата. Нет скрытых платежей и мелких шрифтов.
+            img.advantages__item-icon(src="images/index/advantages/3.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Экологически чистый материал
+              p.advantages__item-text.
+                Сертифицированные, экологичные материалы от проверенных поставщиков.
+            img.advantages__item-icon(src="images/index/advantages/4.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Фотоотчет процесса строительства
+              p.advantages__item-text.
+                Бесплатный фото или видео отчет (по договорённости)
+
+            img.advantages__item-icon(src="images/index/advantages/5.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Гарантийное обслуживание любой постройки
+              p.advantages__item-text.
+                Даем гарантию не на словах.
+            img.advantages__item-icon(src="images/index/advantages/6.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Более 7 лет опыта
+              p.advantages__item-text.
+                Современное и качественное строительство, опытными бригадами.
+            img.advantages__item-icon(src="images/index/advantages/7.svg" alt="")
+          li.advantages__item
+            .advantages__item-content
+              h3.advantages__item-title Индивидуальные проекты
+              p.advantages__item-text.
+                Возможны изменения проектов из каталога и строительство по индивидуальным планам.
+            img.advantages__item-icon(src="images/index/advantages/8.svg" alt="")
+
+    section.section-dop(style="background: url(images/index/advantages-bg.jpg) rgba(246, 246, 249, 0.8)")
+      .container
+        .section-dop__inner
+          .section-dop__content
+            h2.section-dop__title
+              span.bold-text Хотите узнавать&nbsp;
+              | о строящихся объектах, акциях и спецпредложениях?
+            p.section-dop__text.
+              Подпишитесь на нашу группу ВКонтакте и узнавайте
+              свежие новости и полезную информацию раньше всех!
+          button.section-dop__btn.btn.btn-primary Подписаться НА ГРУППУ ВКОНТАКТЕ
+
+    section.section.section-planning
+      .container
+        .section-planning__inner
+          img.section-planning__img(src="images/index/planning-1.jpg" alt="")
+          .section-planning__content
+            h2.section-dop__title.section-planning__title Планируете построить
+              br
+              span.bold-text индивидуальное строение? Свяжитесь с нами.
+            p.section-planning__text.advantages__item-text.
+              Хотите постройку в современном минималистичном стиле,
+              но ни один из типовых проектов Вам не подходит? Выход есть!
+            p.section-planning__text.advantages__item-text.
+              Свяжитесь с нами и мы реализуем задуманное.
+            button.section-planning__btn.btn.btn-big-rounded(data-show-modal-6) Оставить заявку
+
+    section.section.section-reviews
+      .section-reviews__title Отзывы
+      .section-reviews__slider.reviews-slider
+        .reviews-slider-wrapper.swiper-wrapper
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+          .reviews-slider__item.swiper-slide
+            .reviews-slider__title Джон Джон Джон
+            .reviews-slider__rating.rating
+              ul.rating__list
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+                li.rating__item
+                  img.rating__img(src="images/icons/rating.svg" alt="")
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nis.
+            p.reviews-slider__text.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.
+            .reviews-slider__line
+            p.reviews-slider__subtitle Изготовление каркасного дома с балконом
+
+
+        .reviews-slider__buttons
+          button.reviews-slider__btn.reviews-slider__btn--left
+            img(src="images/icons/big-chevron-left.svg" alt="")
+          button.reviews-slider__btn.reviews-slider__btn--right
+            img(src="images/icons/big-chevron-right.svg" alt="")
+
+    section.section.section-maps
+      iframe.section-maps__iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d143385.9796907609!2d49.13404504293099!3d55.8382699645781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1680801918647!5m2!1sru!2sru" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+      .section-maps__inner
+        h2.section-maps__title Контакты
+        .section-maps__block
+          h3.section-maps__subtitle Адрес:
+          p.section-maps__text Моск.обл. г.Ступино ул.Промышленная  (200м от завода "Изомин")
+          p.section-maps__text Пн-Сб 9:00-18:00, Вс - выходной
+        .section-maps__block
+          h3.section-maps__subtitle Контакты:
+          .section-maps__block-list
+            .section-maps__block-item
+              a.section-maps__link(href="tel:74951420725") +7 (495) 142-07-25
+              a.section-maps__link(href="tel:79779080250") +7 (977) 908-02-50
+            .section-maps__block-item
+              a.section-maps__email(href="mailto:domstroy-st@bk.ru") domstroy-st@bk.ru
+              .section-maps__block-social
+                a(href="")
+                  img(src="images/icons/social/youtube.svg" alt="")
+                a(href="")
+                  img(src="images/icons/social/instagram.svg" alt="")
+                a(href="")
+                  img(src="images/icons/social/vk.svg" alt="")
+                a(href="")
+                  img(src="images/icons/social/whatsapp.svg" alt="")
+                a(href="")
+                  img(src="images/icons/social/telegram.svg" alt="")
+        button.btn.btn-warning.btn-shadow(data-show-modal-6) Задать вопрос
+
+  include pug/includes/footer.pug

@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__pages {
+    display: flex;
+    color: rgba(#212864, 0.6);
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__page {
+    &--active {
+      color: var(--blue-dark);
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  &__line {
+    width: 100%;
+    max-width: 59rem;
+    height: 1px;
+    background: rgba(#212864, 0.4);
+  }
+}

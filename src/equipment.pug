@@ -1,0 +1,18 @@
+extends pug/base.pug
+
+append content
+  include pug/includes/header.pug
+
+  main.main
+    section.equipment
+      .container
+        +breadcrumbs("Главная", "Комплектация")
+
+        .equipment__inner
+          h1.equipment__title.title Комплектация
+          p.subtitle.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  include pug/includes/footer.pug
