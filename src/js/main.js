@@ -9,8 +9,6 @@ const swiper = new Swiper(".swiper-main-slider", {
 });
 
 const swiper_offers = new Swiper(".offer-slider", {
-  slidesPerView: 4,
-  spaceBetween: 20,
   navigation: {
     prevEl: ".offer-slider__btn--left",
     nextEl: ".offer-slider__btn--right",
@@ -27,6 +25,11 @@ const swiper_offers = new Swiper(".offer-slider", {
     768: {
       slidesPerView: 1,
       spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
     },
   },
 });

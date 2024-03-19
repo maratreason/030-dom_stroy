@@ -142,6 +142,7 @@
   .main-slider {
     height: 70rem;
     padding: 12rem 0;
+    background-position: -50rem 0 !important;
   }
 
   .main-slider__content {
@@ -177,48 +178,57 @@
     line-height: 3.6rem;
   }
 
-  .tabs__header {
-    gap: 0.5rem;
+  .tabs {
+    &__header {
+      gap: 0.5rem;
 
-    &-item {
-
+      &-item {
+        gap: 2rem;
+      }
     }
-  }
 
-  .tabs__content {
-    flex-wrap: wrap;
-    justify-content: space-around;
+    &__content {
+      // gap: 1rem;
+    }
   }
 
   .section-abs {
     .container {
       padding: 0;
     }
+
+    &__inner {
+      height: 80rem;
+    }
   }
 
-  .abs-slider__content {
-    padding: 0;
-  }
+  .abs-slider {
+    &__content {
+      padding: 0;
+    }
 
-  .abs-slider__title {
-    margin-top: 9rem;
-    padding: 0 2rem;
-    font-size: 3rem;
-    line-height: 3rem;
-  }
+    &__title {
+      margin-top: 9rem;
+      padding: 0 2rem;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
 
-  .abs-slider__img {
-    object-position: -300px;
-    opacity: 0.5;
-  }
+    &__img {
+      object-position: -300px;
+      // opacity: 0.5;
+    }
 
-  .abs-slider__btns {
-    right: 50%;
-    gap: 1rem;
-    transform: translateX(50%);
+    &__btns {
+      right: 50%;
+      gap: 1rem;
+      transform: translateX(50%);
+    }
   }
 
   .offer-slider {
+    right: 0;
+    left: 0;
     flex-wrap: nowrap;
 
     &__btns {
