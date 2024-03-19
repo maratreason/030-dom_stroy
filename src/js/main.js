@@ -97,6 +97,16 @@ const reviews_slider = new Swiper(".reviews-slider", {
 
 
 
+const burgerBtn = document.querySelector("[data-adaptive-menu-trigger]");
+const burgerMenu = document.querySelector("[data-adaptive-menu]");
+if (burgerBtn && burgerMenu) {
+  burgerBtn.addEventListener("click", () => {
+    burgerBtn.querySelector(".burger").classList.toggle("is--active");
+    burgerMenu.classList.toggle("is--active");
+  });
+}
+
+
 
 
 const pictureSlider = (selector) => {

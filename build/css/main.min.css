@@ -230,6 +230,9 @@ label.form-control {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.4rem 3rem;
   font-weight: 700;
   font-size: 1.2rem;
@@ -240,6 +243,7 @@ label.form-control {
   cursor: pointer;
 }
 .btn.btn-outlined {
+  color: var(--blue-dark);
   border: 1px solid var(--blue-dark);
 }
 .btn.btn-rounded {
@@ -1035,6 +1039,51 @@ textarea.textarea.form-control {
   width: 60rem;
 }
 
+.burger {
+  position: relative;
+  top: 1.6rem;
+  left: 0;
+  display: none;
+  width: 3.4rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+.burger .burger__line {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-dark);
+  transition: 0.3s all linear;
+}
+.burger .burger__line_first {
+  top: 0;
+}
+.burger .burger__line_second,
+.burger .burger__line_third {
+  top: 50%;
+  left: 0.8rem;
+  width: 2.6rem;
+  transform: translateY(-50%);
+}
+.burger .burger__line_third {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger .burger__line_fourth {
+  bottom: 0;
+}
+.burger.is--active .burger__line_first, .burger.is--active .burger__line_fourth {
+  opacity: 0;
+}
+.burger.is--active .burger__line_second {
+  transform: translateY(-50%) rotate(45deg);
+}
+.burger.is--active .burger__line_third {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
 .menu__top {
   display: flex;
   align-items: center;
@@ -1043,8 +1092,6 @@ textarea.textarea.form-control {
 }
 .menu__top-burger {
   display: block;
-  width: 3.4rem;
-  height: 3.4rem;
   cursor: pointer;
 }
 .menu__middle {
@@ -1124,8 +1171,8 @@ textarea.textarea.form-control {
 
 .menu-social {
   display: flex;
-  justify-content: center;
   gap: 1.08rem;
+  justify-content: center;
 }
 .menu-social__item {
   width: 2.8rem;
@@ -1146,7 +1193,7 @@ textarea.textarea.form-control {
 .logo__text {
   font-weight: 600;
   font-size: 1.2rem;
-  font-family: "Inter";
+  font-family: Inter, sans-serif;
   line-height: 1.5rem;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -1639,33 +1686,6 @@ textarea.textarea.form-control {
 .offer-slider__btn--right {
   position: absolute;
   right: 0;
-}
-
-.burger {
-  position: relative;
-  top: 1.6rem;
-  left: 0;
-  display: none;
-  width: 2.6rem;
-  height: 0.2rem;
-  background: #353d83;
-  border-radius: 0.2rem;
-  transform: scaleX(-1);
-}
-.burger::before, .burger::after {
-  position: absolute;
-  left: 0;
-  width: 3.4rem;
-  height: 0.2rem;
-  background: #353d83;
-  border-radius: 0.2rem;
-  content: "";
-}
-.burger::before {
-  top: -0.9rem;
-}
-.burger::after {
-  top: 0.9rem;
 }
 
 /**
@@ -3131,6 +3151,75 @@ textarea.textarea.form-control {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 2.7rem;
+}
+
+.adaptive-menu {
+  position: absolute;
+  top: 11rem;
+  left: 0;
+  z-index: 5;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  color: var(--black);
+  background: var(--white);
+}
+.adaptive-menu.is--active {
+  display: block;
+}
+.adaptive-menu__inner {
+  height: 100%;
+  padding: 3.5rem;
+}
+.adaptive-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.adaptive-menu__link {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  line-height: 2rem;
+  color: var(--blue-dark);
+}
+.adaptive-menu__info {
+  margin-top: 2rem;
+}
+.adaptive-menu__text {
+  display: flex;
+  font-size: 1.4rem;
+}
+.adaptive-menu__text:nth-child(1), .adaptive-menu__text:nth-child(3) {
+  margin-bottom: 1.8rem;
+}
+.adaptive-menu__phone {
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: Inter, sans-serif;
+}
+.adaptive-menu__phone:not(last-child) {
+  margin-bottom: 1rem;
+}
+.adaptive-menu__text-link {
+  color: var(--blue-dark);
+}
+.adaptive-menu__buttons {
+  margin-top: 2rem;
+}
+.adaptive-menu__buttons .menu-social {
+  justify-content: start;
+  margin-bottom: 2.4rem;
+}
+.adaptive-menu__btn {
+  width: 21.5rem;
+}
+
+.yellow-line {
+  width: 4rem;
+  border: 0.2rem solid var(--yellow);
+  border-radius: 0.3rem;
 }
 
 @media screen and (max-width: 1400px) {

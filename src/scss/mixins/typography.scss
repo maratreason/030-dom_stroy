@@ -34,3 +34,16 @@
   font-family: Montserrat, sans-serif;
   line-height: 2rem;
 }
+
+@mixin adaptive-menu-text {
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  line-height: 2rem;
+}
+
+@mixin adaptive-menu-phone {
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-family: Inter, sans-serif;
+}
