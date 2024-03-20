@@ -22,10 +22,6 @@ const swiper_offers = new Swiper(".offer-slider", {
       slidesPerView: 4,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -265,6 +261,7 @@ const modal = ($trigger, $modal, $backdrop, $activeClass, $close) => {
     if (modalTriggers) {
       modalTriggers.forEach((btn) => {
         btn.addEventListener("click", (e) => {
+          // modal.style.top = (e.pageY - 400) + "px";
           backdrop.classList.add($activeClass);
           modal.classList.add($activeClass);
         });
