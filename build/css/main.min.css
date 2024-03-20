@@ -1642,8 +1642,15 @@ textarea.textarea.form-control {
 .footer a {
   color: #fff;
 }
-.footer__bottom, .footer__bottom-link {
+.footer__bottom {
   color: rgba(255, 255, 255, 0.4) !important;
+}
+.footer__bottom-link {
+  color: rgba(255, 255, 255, 0.4) !important;
+  transition: var(--transition-1);
+}
+.footer__bottom-link:hover {
+  color: var(--yellow) !important;
 }
 .footer__bottom {
   display: flex;
@@ -1653,6 +1660,12 @@ textarea.textarea.form-control {
 .footer__bottom-list {
   display: flex;
   gap: 2.3rem;
+}
+.footer__menu-link {
+  transition: var(--transition-1);
+}
+.footer__menu-link:hover {
+  color: var(--yellow);
 }
 
 .offer-swiper-slider {
@@ -3187,6 +3200,10 @@ textarea.textarea.form-control {
   font-family: Inter, sans-serif;
   line-height: 2rem;
   color: var(--blue-dark);
+  transition: var(--transition-1);
+}
+.adaptive-menu__link:hover {
+  color: var(--yellow);
 }
 .adaptive-menu__info {
   margin-top: 2rem;

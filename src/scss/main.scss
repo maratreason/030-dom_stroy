@@ -735,10 +735,19 @@
     color: #fff;
   }
 
-  &__bottom,
-  &__bottom-link {
+  &__bottom {
     color: rgba(255, 255, 255, 0.4) !important;
+
+    &-link {
+      color: rgba(255, 255, 255, 0.4) !important;
+      transition: var(--transition-1);
+  
+      &:hover {
+        color: var(--yellow) !important;
+      }
+    }
   }
+  
 
   &__bottom {
     display: flex;
@@ -748,6 +757,16 @@
     &-list {
       display: flex;
       gap: 2.3rem;
+    }
+  }
+
+  &__menu {
+    &-link {
+      transition: var(--transition-1);
+
+      &:hover {
+        color: var(--yellow);
+      }
     }
   }
 }
@@ -2601,6 +2620,11 @@
     @include adaptive-menu-text;
 
     color: var(--blue-dark);
+    transition: var(--transition-1);
+
+    &:hover {
+      color: var(--yellow);
+    }
   }
 
   &__info {
