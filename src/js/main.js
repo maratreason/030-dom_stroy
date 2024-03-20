@@ -36,7 +36,6 @@ const swiper_offers = new Swiper(".offer-slider", {
 
 const abs_slider = new Swiper(".abs-slider", {
   slidesPerView: 1,
-  loop: true,
   pagination: {
     el: ".abs-slider-pagination",
     clickable: true,
@@ -46,10 +45,13 @@ const abs_slider = new Swiper(".abs-slider", {
     },
   },
   navigation: {
-    nextEl: ".abs-slider__btn--right",
-    prevEl: ".abs-slider__btn--left",
+    nextEl: ".abs-slider__btn.abs-slider__btn--right",
+    prevEl: ".abs-slider__btn.abs-slider__btn--left",
+    disabledClass: "abs-slider__btn--inactive",
   },
 });
+
+abs_slider.on("reachEnd", function () {});
 
 const swiper_slider = new Swiper(".ours-slider", {
   slidesPerView: 4,
@@ -96,9 +98,17 @@ const reviews_slider = new Swiper(".reviews-slider", {
     nextEl: ".reviews-slider__btn--right",
     prevEl: ".reviews-slider__btn--left",
   },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
 });
-
-
 
 const burgerBtn = document.querySelector("[data-adaptive-menu-trigger]");
 const burgerMenu = document.querySelector("[data-adaptive-menu]");
@@ -108,9 +118,6 @@ if (burgerBtn && burgerMenu) {
     burgerMenu.classList.toggle("is--active");
   });
 }
-
-
-
 
 const pictureSlider = (selector) => {
   const root = document.querySelector(selector);

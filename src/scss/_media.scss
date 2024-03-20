@@ -20,41 +20,88 @@
     position: relative;
     height: 80rem;
     overflow-x: hidden;
-  }
 
-  .abs-slider__img {
-    max-width: 100rem;
-  }
-
-  .abs-slider__modal {
-    position: absolute;
-    right: 5rem;
-    bottom: 10rem;
-
-    button {
-      background: rgba(#fff, 0.7);
+    &__img {
+      max-width: 100%;
+      height: 80rem;
+      object-fit: cover;
     }
-  }
 
-  .abs-slider__btns {
-    right: 5rem;
-  }
+    &__modal {
+      position: absolute;
+      right: 5rem;
+      bottom: 10rem;
+  
+      button {
+        background: rgba(#fff, 0.7);
+      }
+    }
 
-  .abs-slider__content {
-    position: absolute;
-    left: 0;
-    height: 100%;
+    &__content {
+      position: absolute;
+      left: 0;
+      height: 100%;
+    }
+
+    &-pagination {
+      bottom: 4rem !important;
+      justify-content: center !important;
+      margin-left: 2.3rem;
+      padding-right: 0;
+    }
+
+    &__btns {
+      right: auto;
+      bottom: 4.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .section-planning {
     &__inner {
       flex-wrap: wrap;
     }
+
+    &__img {
+      width: 100%;
+    }
   }
 
   .advantages {
     &__item {
       height: 16rem;
+    }
+  }
+
+  .reviews-slider {
+    gap: 0;
+    padding: 0 2.8rem;
+
+    &__item {
+      left: 0;
+      width: 100%;
+      
+      &--active {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-maps {
+    height: 128rem;
+
+    &__inner {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      border-radius: 2rem 2rem 0 0;
+    }
+
+    &__block {
+      margin-bottom: 2rem;
     }
   }
 }
@@ -145,9 +192,6 @@
     background-position: -50rem 0 !important;
   }
 
-  .main-slider__content {
-  }
-
   .main-slider__title {
     margin-bottom: 2.5rem;
     font-size: 2.8rem;
@@ -163,9 +207,6 @@
 
   .main-slider__btns {
     gap: 2rem;
-  }
-
-  .main-slider__btn {
   }
 
   .main-slider__btn-link {
@@ -186,10 +227,6 @@
         gap: 2rem;
       }
     }
-
-    &__content {
-      // gap: 1rem;
-    }
   }
 
   .section-abs {
@@ -203,6 +240,8 @@
   }
 
   .abs-slider {
+    height: 80rem;
+
     &__content {
       padding: 0;
     }
@@ -215,14 +254,15 @@
     }
 
     &__img {
-      object-position: -300px;
-      // opacity: 0.5;
+      max-width: 100%;
+      height: 80rem;
+      object-fit: cover;
+      opacity: 0.7;
     }
 
     &__btns {
-      right: 50%;
-      gap: 1rem;
-      transform: translateX(50%);
+      z-index: 2;
+      gap: 5rem;
     }
   }
 
@@ -267,7 +307,7 @@
 
   .section-dop {
     padding: 11rem 0;
-    background-position-y: -500px !important;
+    background-size: auto;
 
     &__inner {
       flex-wrap: wrap;
@@ -283,17 +323,26 @@
     }
   }
 
+  .section-planning {
+    padding: 12rem 0;
+  
+    &__text {
+      text-align: left;
+    }
+  }
+
   .reviews-slider {
-    height: 82rem;
+    height: 100%;
+    min-height: 82rem;
 
     &__item {
       top: 1rem;
-      display: none;
       width: 94%;
-      padding: 14rem 3rem 9rem;
+      padding: 14rem 2.5rem 10rem;
 
       &--active {
         display: block;
+        height: 100%;
       }
     }
 
@@ -309,7 +358,7 @@
     }
 
     &__line {
-      margin: 3rem auto;
+      margin: 2rem auto;
     }
 
     &__subtitle {
@@ -324,6 +373,11 @@
     &__btn {
       width: 2rem;
       height: 5.4rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -337,10 +391,8 @@
   }
 
   .section-maps {
-    height: 102rem;
-
     &__inner {
-      top: 30%;
+      top: 50%;
       bottom: 0;
       left: 0;
       width: 100%;
